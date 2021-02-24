@@ -68,13 +68,14 @@ February 2008 – until now
 Investment Holding Company, Limassol, Cyprus  
 Position: Head of Corporate Department   
 
-•	Working for Holding Company that has its main assets allocated in the following industries:  
-  Metallurgy and mining, Financial banking sector, Mass media, Real estate and tourism. 
-•	Assisting Legal Department with corporate documents obtaining credit lines, loans, freights etc. 
-•	Legalization of company corporate documentation 
-•	Monitoring of legislation acts and other corporative regulations publications and timely reporting to the management of the Company. 
-•	Assisting with statistical data reporting and handling requests of local authorities (e.g. Central Bank of Cyprus) in regard to corporate issues.   
-•	Handling company bank accounts opening forms and related corporate documentation
-•	Preparation of all necessary documents to wind up the companies, monitoring the liquidation procedures and receiving confirming certificates. 
-•	Handling archive of corporate documents for groups of companies supervised. 
-•	Communication with local administers and agents. 
+- Working for Holding Company that has its main assets allocated in the following industries:  
+  Metallurgy and mining, Financial banking sector, Mass media, Real estate and tourism.  
+- Assisting Legal Department with corporate documents obtaining credit lines, loans, freights etc.  
+- Legalization of company corporate documentation.  
+-	Monitoring of legislation acts and other corporative regulations publications and timely reporting to the management of the Company.  
+-	Assisting with statistical data reporting and handling requests of local authorities (e.g. Central Bank of Cyprus) in regard to corporate issues.  
+-	Handling company bank accounts opening forms and related corporate documentation.  
+-	Preparation of all necessary documents to wind up the companies, monitoring the liquidation procedures and receiving confirming certificates  
+- Handling archive of corporate documents for groups of companies supervised.  
+-	Communication with local administers and agents.  
+
