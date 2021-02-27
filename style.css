@@ -1,0 +1,81 @@
+.cv-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+  .cv-header {
+    text-align: center;
+    font-style: bold;
+  }
+  .personal-data-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    padding: 10px;
+    background-color: lightgrey;
+  }
+  
+  .personal-data {
+    margin-left: 20%;
+  }
+  .avatar {
+    height: 150px;
+    width: 178px;
+  }
+  
+  figure {
+    margin-left: auto;
+    margin-right: 10%;
+  }
+  
+  .main-data {
+    margin: 30px;
+  }
+  
+  .education-data {
+    align-self: center;
+  }
+  
+  table,
+  th {
+    text-align: left;
+  }
+  
+  td {
+    width: 150px;
+  }
+  
+  td + td {
+    height: 50px;
+    width: auto;
+  }
+  
+  p.italic {
+    font-style: italic;
+  }
+  
+  .additional-info {
+    align-items: space-between;
+  }
+  
+  .experience {
+    padding: 5px;
+    list-style-type: none;
+  }
+  
+  .duties {
+    padding: 5px 0 5px 0;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
