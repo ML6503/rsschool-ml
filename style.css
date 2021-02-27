@@ -5,13 +5,17 @@
     justify-content: flex-start;
     padding: 20px;
     word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
   }
   .cv-header {
     text-align: center;
     font-style: bold;
   }
   .personal-data-container {
-    /* align-self: center; */
+    align-items: center;
     display: flex;
     justify-content: center;
     /* text-align: center; */
@@ -25,7 +29,9 @@
   .avatar {
     height: 150px;
     width: 178px;
+  }
   
+  figure {
     margin-left: auto;
     margin-right: 10%;
   }
@@ -44,8 +50,6 @@
   }
   
   td {
-    /* border-top: 1px solid; */
-    /* border-bottom: 1px solid #333; */
     width: 150px;
   }
   
@@ -62,7 +66,16 @@
     align-items: space-between;
   }
   
-  li {
+  .experience {
     padding: 5px;
+    list-style-type: none;
+  }
+  
+  .duties {
+    padding: 5px 0 5px 0;
+  }
+  
+  footer {
+    text-align: center;
   }
   
