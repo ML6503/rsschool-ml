@@ -1,3 +1,29 @@
 .cv-container {
     margin: auto;
+    flex: content;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+.cv-header {
+    text-align: center;
+    font-style: bold;
+}
+.personal-data {
+    align-self: center;
+    text-align: center;
+    background-color: lightgrey;    
+}
+
+.education-data {
+    align-self: center;    
+}
+
+table,
+td {
+    border-top: 1px  solid #333;;
+  	border-bottom: 1px solid #333;;
+}
+
+p.italic {
+    font-style: italic;
+  }
