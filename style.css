@@ -3,27 +3,53 @@
     flex: content;
     flex-direction: column;
     justify-content: flex-start;
-}
-.cv-header {
+    padding: 20px;
+    word-break: break-all;
+  }
+  .cv-header {
     text-align: center;
     font-style: bold;
-}
-.personal-data {
-    align-self: center;
+  }
+  .personal-data {
+    /* align-self: center; */
     text-align: center;
-    background-color: lightgrey;    
-}
-
-.education-data {
-    align-self: center;    
-}
-
-table,
-td {
-    border-top: 1px  solid #333;;
-  	border-bottom: 1px solid #333;;
-}
-
-p.italic {
+    padding: 5px;
+    background-color: lightgrey;
+  }
+  
+  .main-data {
+    margin: 30px;
+  }
+  
+  .education-data {
+    align-self: center;
+  }
+  
+  table,
+  th {
+    text-align: left;
+  }
+  
+  td {
+    /* border-top: 1px solid; */
+    /* border-bottom: 1px solid #333; */
+    width: 150px;
+  }
+  
+  td + td {
+    height: 50px;
+    width: auto;
+  }
+  
+  p.italic {
     font-style: italic;
   }
+  
+  .additional-info {
+    align-items: space-between;
+  }
+  
+  li {
+    padding: 5px;
+  }
+  
