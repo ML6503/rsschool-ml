@@ -1,21 +1,28 @@
 /*common styles*/
-button {
-    cursor: pointer
+button,
+input {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
 }
 
 button:focus,
-button:hover {    
-    filter: brightness(80%) saturate(120%); 
+button:hover {
+    /*scale on hover*/
+    transform: scale(1.2);
 }
 
 /* main styles*/
+body {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Open Sans", "Times New Roman", cursive, serif;
+}
+
 .main-wrapper {
     position: relative;
     width: 1440px;
     height: 2508px;
-    background: #ffffff;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
     /* max-width: 1440px; 
     max-height: 2508px; 
     padding-right: 10px;
@@ -24,11 +31,11 @@ button:hover {
 
 /*header bar styles */
 .header-container {
-    /* position: fixed; */
-    position: absolute;
-    top: 0px;
     width: 100%;
     height: 15%;
+    display: flex;
+    justify-content: space-between;
+    color: #F7F7F7;
 }
 
 .logo-container {
@@ -36,39 +43,108 @@ button:hover {
     vertical-align: middle; */
     display: flex;
     align-items: center;
-    margin-left: 120px;
-    margin-top: 19px;
+    padding-left: 120px;
+    padding-top: 19px;
     height: 60px;
-    width: 70px;
-    border-radius: 0px;
-    z-index: 2;
 }
 
+.logo-text {
+    /* left: 205px; */
+    padding-left: 15px;
+    width: 155px;
+    height: 60px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: "Roboto", cursive, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.logo-text:hover,
+.nav-list li:hover,
+.email-container input:hover,
+h3:hover {
+    text-decoration: underline;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.nav-list {
+    display: inline;
+    list-style-type: none;
+    color: #F7F7F7;
+
+}
+
+.nav-list li {
+    display: inline;
+    /* display: inline-block; */
+    vertical-align: center;
+    padding: 30px;
+    font-size: 23px;
+    line-height: 60px;
+}
+
+ul li img {
+    vertical-align: middle;
+}
+
+.magnifier-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.magnifier-icon:hover {
+    /*scale on hover*/
+    transform: scale(1.5);
+}
+
+.nav-btn {
+    width: 120px;
+    height: 50px;
+    border: 2px solid #CD6326;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 27px;
+    font-size: 23px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    color: #F7F7F7;
+}
+
+.nav-btn:hover {
+    background: #CD6326;
+}
 
 /* survival top section styles*/
 .survival {
-    position: absolute;
     min-height: 779px;
     width: 1440px;
-    left: 0px;
-    top: 1px;
-    border-radius: 0px;
+    padding-top: 7px;
     background-image: url('./assets/fox.png');
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-size: cover;
+    background-color: #02160b;
 }
 
 
 .survival-content-container {
-    margin-left: 120px;
-    margin-top: 199px;
-    /* width: 199px; */
-    font-family: "Open Sans", "Times New Roman", cursive, serif;
+    padding-left: 120px;
+    /* padding-top: 120px; */
+
+
 }
 
 .survival-content-container h1 {
-    line-height: 72px;
+    /* line-height: 72px; */
     width: 199px;
     font-size: 48px;
     font-weight: 400;
@@ -78,9 +154,10 @@ button:hover {
 }
 
 .survival-content-container p {
-    /* top: 322px; */
-    /* left: 120px; */
-    margin-top: 51px;
+    padding-top: 31px;
+    /*padding-bottom: 40px; */
+    /* padding-top: 51px; */
+    padding-bottom: 65px;
     height: 108px;
     width: 274px;
     text-align: left;
@@ -95,8 +172,6 @@ button:hover {
     position: absolute;
     /* left: 120px; */
     /* top: 479px; */
-    margin-top: 65px;
-    line-height: 27px;
     width: 160px;
     height: 60px;
     text-align: center;
@@ -104,8 +179,193 @@ button:hover {
     color: #F7F7F7;
     border-radius: 5px;
     border: none;
-    font-family: 'Roboto', sans-serif;
     font-size: 23px;
+}
+
+.donate-btn:hover,
+.submit-btn:hover {
+    background: #E39128;
+}
+
+/* main container for articles and slider*/
+
+.articles-container {
+    width: 1440px;
+    height: 1368px;
+    background-color: #cccccc;
+}
+
+.articles {
+    padding-top: 120px;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.articles h2:hover,
+p:hover {
+    text-decoration: underline;
+}
+
+.articles h2 {
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height, or 150% */
+    width: 324px;
+    height: 72px;
+    color: #333333;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+}
+
+.articles p {
+    width: 332px;
+    height: 36px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+    color: #666666;
+}
+
+.articles-slider {
+    padding-top: 176px;
+    padding: 120px 120px 239px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    vertical-align: text-bottom;
+}
+
+.articles-slider a:link,
+.articles-slider h4,
+.articles-slider p {
+    text-decoration: none;
+    color: #F7F7F7;
+    margin: 0;
+}
+
+.articles-slider a:hover {
+    text-decoration: underline;
+}
+
+.articles-slider h4 {
+    /* color: #F7F7F7; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+
+}
+
+.articles-slider p {
+    font-size: 17px;
+    line-height: 27px;
+    /* identical to box height, or 164% */
+    padding-bottom: 40px;
+}
+
+.articles-slider button {
+    width: 30px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+}
+
+.articles-slider button:hover, 
+.articles-slider button:focus {
+        outline: none;    
+}
+
+.articles-slider a {
+    width: 300px;
+    height: 360px;
+    /* left: 210px; */
+}
+
+.article-headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.deer-img {
+    background: url(./assets/deer.jpg);
+}
+
+.squirrel-img {
+    background: url(./assets/squirrel.jpg);
+}
+
+.bird-img {
+    background: url(./assets/bird.jpg);
+}
+
+/*subscription*/
+.subscription-container {   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.subscription-container h3 {
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 40px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    /* font-dark */
+    color: #333333;
+}
+
+.email-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.email-container input {
+    height: 60px;
+    width: 500px;
+    font-size: 23px;
+    line-height: 27px;
+    color: #666666;
+    font-size: 23px;
+    line-height: 27px;
+    padding: 0 15px;
+}
+
+.submit-btn {    
+    /* left: 120px; */
+    /* top: 479px; */
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    background: #CD6326;    
+    border: 1px solid #CD6326;
+    border-radius: 0px 5px 5px 0px;
+    color: #F7F7F7;
+    font-size: 23px;
+    line-height: 27px;
+}
 
 
+
+/*Footer*/
+
+footer {
+    background-color: #181617;
 }
