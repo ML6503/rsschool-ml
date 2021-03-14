@@ -103,17 +103,28 @@ body {
 
 .nav-bar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nav-list {
     display: inline;
+    padding-right: 80px;
     color: #F7F7F7;    
 }
 
-.nav-list-header li {
-    padding: 30px;
+.blog {
+    margin-left: 35px ; 
 }
+
+.contacts {
+    padding: 0 60px 0 60px;
+}
+
+.sgn-btn {
+    padding-left: 60px;
+}
+
 
 .nav-list li {
     display: inline;
@@ -174,7 +185,8 @@ ul li a,
 }
 
 .survival-content-container h1 {
-    /* line-height: 72px; */
+    line-height: 72px;
+    padding-top: 60px;
     width: 199px;
     font-size: 48px;
     font-weight: 400;
@@ -184,10 +196,10 @@ ul li a,
 }
 
 .survival-content-container p {
-    padding-top: 31px;
+    padding-top: 15px;
     /*padding-bottom: 40px; */
     /* padding-top: 51px; */
-    padding-bottom: 65px;
+    padding-bottom: 30px;
     height: 108px;
     width: 274px;
     text-align: left;
@@ -199,7 +211,7 @@ ul li a,
 }
 
 .donate-btn {
-    position: absolute;
+    /* position: absolute; */
     /* left: 120px; */
     /* top: 479px; */
     width: 160px;
@@ -251,18 +263,18 @@ ul li a,
 
 .articles p {
     width: 332px;
-    height: 36px;
+    height: 20px;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 25px;
     /* identical to box height, or 150% */
     color: #666666;
 }
 
 .articles-slider {
-    padding-top: 176px;
-    padding: 120px 120px 239px 120px;
+    /* padding-top: 150px; */
+    padding: 120px 120px 210px 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -284,7 +296,7 @@ ul li a,
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
-    line-height: 36px;
+    line-height: 60px;
 
 }
 
@@ -358,7 +370,7 @@ ul li a,
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 0;
+    padding-top: 30px;
 }
 
 .email-container input {
@@ -445,12 +457,23 @@ ul li a,
     text-decoration: underline;
 }
 
+.articles-li {
+    padding-right: 25px;
+    padding-left: 35px ;
+}
+
+.about-li {
+    padding-left: 20px; 
+    padding-right: 40px;
+}
+
 .icons-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 360px;
+    width: 240px;
+    margin-left: 40px ;
 }
 
 .icons-list li:hover {
