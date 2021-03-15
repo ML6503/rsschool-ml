@@ -1,2 +1,2 @@
-# rsschool-cv
-https://ml6503.github.io/rsschool-cv/
+# rsschool-wildlife
+https://ml6503.github.io/rsschool-ml/wildlife/
