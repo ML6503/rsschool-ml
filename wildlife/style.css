@@ -9,20 +9,11 @@ li {
     list-style: none;
 }
 
-button:focus,
-button:hover {
-    /*scale on hover*/
+/* button:focus,
+button:hover {    
     transform: scale(1.2);
-}
-
-/* a,
-a:hover,
-a:active,
-a:visited,
-a:focus {
-    color: #F7F7F7;
-    text-decoration: none;    
 } */
+
 
 a {
     color: #F7F7F7;
@@ -210,13 +201,11 @@ ul li a,
 }
 
 .donate-btn {
-    /* position: absolute; */
-    /* left: 120px; */
-    /* top: 479px; */
     width: 160px;
     height: 60px;
     text-align: center;
     background: #CD6326;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #F7F7F7;
     border-radius: 5px;
     border: none;
@@ -224,9 +213,14 @@ ul li a,
 }
 
 .donate-btn:hover,
-.submit-btn:hover {
+.donate-btn:focus,
+.donate-btn:active,
+.submit-btn:hover,
+.submit-btn:focus,
+.submit-btn:active {
     background: #E39128;
     border: none;
+    outline: none;
 }
 
 /* main container for articles and slider*/
