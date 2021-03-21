@@ -14,6 +14,9 @@ const BTN_ACTIVE_CLASS = 'btn-active';
 // we declare the button that can change notes to letters 
 let btnChange;
 
+//we declare audio state for mouse or key when pressed as false
+let isPressed = false;
+
 // add active class to a note key or a button once clicked
 function addActiveClass(target, activeClass) {
     const array = activeClass === PIANO_ACTIVE_CLASS ? pianoKeys : activeClass === BTN_ACTIVE_CLASS ? buttons : [];
@@ -28,18 +31,25 @@ function addActiveClass(target, activeClass) {
 
     array.forEach(key => {
         if (key.classList.contains(activeClass)) {
-            key.classList.remove(activeClass);
+            if (isDown && activeClass === PIANO_ACTIVE_CLASS) {
+                console.log('we are changing activity class from mouse event');
+                key.classList.remove(PIANO_ACTIVE_PSEUDO_CLASS);
+                key.classList.remove(PIANO_ACTIVE_CLASS);
+            }
+            key.classList.remove(BTN_ACTIVE_CLASS);
         }
     });
+
     target.classList.add(activeClass);
     if (activeClass === PIANO_ACTIVE_CLASS) {
-        target.classList.add(PIANO_ACTIVE_PSEUDO_CLASS);
-    }
+        target.classList.add(PIANO_ACTIVE_PSEUDO_CLASS);        
+    }  
 
 };
 
 // play note sound
 function playAudio(target) {
+    // console.log('we are in play Audio and TARGET is ', target);
     const audio = new Audio();
     if (target.classList.contains('piano-key')) {
         addActiveClass(target, PIANO_ACTIVE_CLASS);
@@ -53,42 +63,61 @@ function playAudio(target) {
 // play note on mouse click
 piano.addEventListener('mousedown', e => playAudio(e.target));
 
-// we remove class 'piano-key-active' from inactive key on 'transitionend' event
+// we remove class 'piano-key-active' from inactive key on mouseout
 function removeActiveKey(e) {
+    
+    console.log('removeActiveKey ', e.target.classList);
 
-    if (e.propertyName !== 'transform') return;
+    // if (e.propertyName !== 'transform') return;
+    
     e.target.classList.remove(PIANO_ACTIVE_CLASS);
     e.target.classList.remove(PIANO_ACTIVE_PSEUDO_CLASS);
-    isUp = false;
+    // console.log('mouseup or keyup and is pressed', e.target.classList);
+    e.preventDefault();
 };
 
-let isUp = false;
-window.addEventListener('keydown', () => isUp = true );
-if(isUp) {
-    pianoKeys.forEach(key => key.addEventListener('transitionend', removeActiveKey));
-}
+// we remove active note key css class from keyboard
+function removeActiveNoteClass(key) {
+    const letter = key.code.slice(3);
+    pianoKeys.forEach(k => {
+        if (letter !== undefined && k.dataset.letter === letter) {            
+            k.classList.remove(PIANO_ACTIVE_CLASS);
+            k.classList.remove(PIANO_ACTIVE_PSEUDO_CLASS);
+        }
+    });
 
+};
 
-// play note on mousedown + mousemove
-let isPressed = false;
-window.addEventListener('mousedown', () => isPressed = true);
-piano.addEventListener('mousemove', e => {
-    if (isPressed && e.which === 1) {
+// play note on mousedown + mouseover
+let isDown;
+
+window.addEventListener('mousedown', e => isDown = true);
+window.addEventListener('mouseover', e => {
+    if (isDown && e.which === 1) {
         playAudio(e.target);
     }
+    e.preventDefault();
 });
+// remove active css class on mouseout
+// window.addEventListener('mouseout', e => {
+//     if (isDown && e.which === 1) {
+//         pianoKeys.forEach(key => key.addEventListener('transitionend', removeActiveKey));
 
-// stop play on mouseup
+//     }
+// })
+// set isDown to false mouseup 
 window.addEventListener('mouseup', e => {
-    if (e.which === 1 && isPressed) {
-        isPressed = false;
+    if (isDown && e.which === 1) {
+        pianoKeys.forEach(key => key.addEventListener('transitionend', removeActiveKey));
+
     }
+    isDown = false;
+    e.preventDefault();
 });
 
-// play notes from keyboard
-window.addEventListener('keydown', e => {
+function callSoundFromKeyboard(e) {
     const repeat = e.repeat;
-
+    isPressed = true;
     const letter = e.code.slice(3);
 
     if (letter !== undefined && letter.length === 1) {
@@ -98,6 +127,19 @@ window.addEventListener('keydown', e => {
             playAudio(noteTarget);
         }
     }
+}
+
+// play notes from keyboard
+window.addEventListener('keydown', e => {
+    callSoundFromKeyboard(e);
+    e.preventDefault();
+});
+
+
+window.addEventListener('keyup', e => {
+    isPressed = false;
+    removeActiveNoteClass(e)
+    e.preventDefault();
 });
 
 /* changing notes to letters and active class of Notes / Letters buttons */
@@ -107,6 +149,7 @@ function toggleButton(e) {
     btnChange = e.target.classList.contains('btn-active') ? false : true;
 
     addActiveClass(e.target, BTN_ACTIVE_CLASS)
+    e.preventDefault();
 };
 
 buttonsContainer.addEventListener('click', e => toggleButton(e));
@@ -127,4 +170,4 @@ function toggleFullscreen() {
     }
 };
 
-screenButton.addEventListener('click', () => toggleFullscreen())
+screenButton.addEventListener('click', () => toggleFullscreen());
