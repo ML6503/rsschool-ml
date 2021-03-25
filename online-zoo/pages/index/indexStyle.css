@@ -1,0 +1,45 @@
+.background-body {
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+.main-screen {
+    background: url("../../assets/images/backgroundImg.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* Set rules to fill background */
+    /* min-height: 100%;
+    min-width: 1920px; */
+    min-height: 940px;
+    min-width: 100%;
+
+    /* Set up proportionate scaling */
+    /* width: 100%;
+    height: auto; */
+    width: auto;
+    height: 100%;
+
+    /* Set up positioning */
+    position: fixed;
+    /* margin-top: 94px; */
+    /* top: 0; */
+    left: 0;
+}
+
+/* @media screen and (max-width: 1920px) { */
+    @media screen and (max-height: 940px) {
+    main-screen {
+        left: 50%;
+        margin-left: -470px;
+        /* 50% */
+    }
+}
+
+.nav-header {
+    min-height: 94px;
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+}
