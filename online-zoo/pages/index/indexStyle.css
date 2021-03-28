@@ -1,45 +1,278 @@
+:root {
+    --size-divisor: 1;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
 .background-body {
     background-color: #FFFFFF;
     margin: 0;
 }
 
 .main-screen {
-    background: url("../../assets/images/backgroundImg.png") no-repeat center center;
+    background: url("../../assets/images/backgroundImg.png") no-repeat center bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     /* Set rules to fill background */
-    /* min-height: 100%;
-    min-width: 1920px; */
-    min-height: 940px;
-    min-width: 100%;
+    min-height: 100vh;
+    /* min-width: 1920px; */
+    /* min-height: 940px; */
+    /* min-width: 100%; */
 
     /* Set up proportionate scaling */
-    /* width: 100%;
-    height: auto; */
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    /* width: auto;
+    height: 100%; */
 
     /* Set up positioning */
-    position: fixed;
-    /* margin-top: 94px; */
-    /* top: 0; */
     left: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
+
+.nav-header {
+    height: calc(94px / var(--size-divisor));
+    /*apprx 94px (10.84vh?)*/
+    /* min-width: 100%; */
+    /* width: auto; */
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
+    color: #333333;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    width: 100%
+}
+
+.logo-container {
+    width: calc(59px / var(--size-divisor));
+    height: calc(42px / var(--size-divisor));
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    /* align-self: center; */
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 900;
+    /* margin: 0; */
+    padding-left: calc(151px / var(--size-divisor));
+    /* padding-bottom: calc(26px / var(--size-divisor)); */
+}
+
+.zoo-text {
+    /* width: 59px; */
+    /* height: 42px; */
+    text-align: left;
+    font-size: calc(36px / var(--size-divisor));
+    font-style: normal;
+    line-height: calc(42px / var(--size-divisor));
+    /* text-transform: uppercase; */
+    /* padding-top: -10px; */
+
+}
+
+.online-text {
+    padding-left: 1px;
+    text-align: left;
+    font-size: calc(18px / var(--size-divisor));
+    line-height: calc(11px / var(--size-divisor));
+    /* line-height: 21px; */
+    letter-spacing: 0.08em;
+    margin: 0;
+    /* width: 58px;
+    height: 21px; */
+}
+
+.nav-list-header {
+    align-self: center;
+    /* width: 70%; */
+    /* padding: 0 calc(471px / var(--size-divisor)) 0 calc(422.5px / var(--size-divisor)); */
+    /* width: calc(573px / var(--size-divisor)); */
+    /* height: 23px; */
+    /* left: 674px; */
+    /* top: 37px; */
+}
+
+.nav-bar {}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    /* padding: 0 calc(41.5px / var(--size-divisor)); */
+}
+
+.map {
+    padding: 0 calc(83px / var(--size-divisor));
+}
+
+.about {
+    padding-right: calc(83px / var(--size-divisor));
+}
+
+.contact {
+    /* width: calc(79px / var(--size-divisor));  */
+    /* height: calc(19px / var(--size-divisor));  */
+    /* width: fit-content; */
+    padding-right: calc(82px / var(--size-divisor));
+}
+
+.contact-link {
+    width: 100%;
+}
+
+.li-decor a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(16px / var(--size-divisor));
+    line-height: calc(19px / var(--size-divisor));
+}
+
+
+.li-decor a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.label-mode-btn {
+    align-self: center;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mode-btn {
+    width: calc(54px / var(--size-divisor));
+    height: calc(30px / var(--size-divisor));
+    background-color: #F2F2F2;
+    border-style: none;
+    margin-right: calc(150px / var(--size-divisor));
+    border-radius: calc(190px / var(--size-divisor));
+    isolation: isolate;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.knob {
+    width: calc(20px / var(--size-divisor));
+    height: calc(20px / var(--size-divisor));
+    /* height: 100%;
+    width: 200%; */
+    margin-top: calc(5px / var(--size-divisor));
+    margin-left: calc(6px / var(--size-divisor));
+    ;
+    /* position: relative; */
+    border-radius: 50%;
+
+    background-color: #FFFFFF;
+    /* 1 */
+    box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
+    transform: translate3d(15%, 0, 0);
+    transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+}
+
+.toggle-state {
+    display: none;
+}
+
+.toggle-state:checked~.knob {
+    transform: translate3d(95%, 0, 0);
+}
+
+.watch-container {
+    padding-left: calc(360px / var(--size-divisor));
+    padding-top: calc(206px / var(--size-divisor));
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;   
+}
+
+.watch-text {
+    /* width: calc(793px / var(--size-divisor));
+    height: calc(208px / var(--size-divisor)); */
+    margin: 0;      
+    font-weight: 900;
+    font-size: calc(89px / var(--size-divisor));
+    line-height: calc(104px / var(--size-divisor));    
+    color: #FEFEFE;
+}
+
+.watch-btn {
+    align-self: flex-start;
+    margin-top: calc(37px / var(--size-divisor));
+    padding: 0;
+    /* border: none; */
+    /* background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%); */
+    background: none;    
+    border-style: none;
+}
+
+.watch-btn:focus {
+    border-style: none;
+}
+
+.watch-logo-big {
+    /* width: calc(32px / var(--size-divisor));
+    height: calc(32px / var(--size-divisor)); */
+    width: calc(245px / var(--size-divisor));
+    height: calc(55px / var(--size-divisor));
+    background: url("../../assets/icons/watchLogoBig.svg") no-repeat top left;
+    background-size: cover;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+}
+
+
+
 /* @media screen and (max-width: 1920px) { */
-    @media screen and (max-height: 940px) {
-    main-screen {
-        left: 50%;
-        margin-left: -470px;
-        /* 50% */
+/*90.01vh is apprx 940px*/
+@media (min-width: 640px) {
+    :root {
+        --size-divisor: 1.83;
     }
 }
 
-.nav-header {
-    min-height: 94px;
-    min-width: 100%;
-    width: auto;
-    height: 100%;
+@media (min-width: 640px) {
+    :root {
+        --size-divisor: 1.67;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --size-divisor: 1.27;
+    }
+}
+
+@media (min-width: 1920px) {
+    :root {
+        --size-divisor: 1;
+    }
 }

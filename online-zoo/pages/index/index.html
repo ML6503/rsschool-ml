@@ -8,18 +8,50 @@
     <meta name="author" content="ML AKA Arethel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Zoo</title>
-    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="stylesheet" href="indexStyle.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
 </head>
 
 <body class="background-body">
 
-    <section >
-        <header class="nav-header"></header>       
-        <div class="main-screen">
+    <section class="main-screen">
+        <header class="nav-header" id="zooHeader">
+            <h1 style="margin: 0">
+                <a href=# class="logo-container">
+                    <span class="zoo-text">zoo</span>
+                    <span class="online-text">online</span>
+                </a>
+            </h1>
 
+            <nav class="nav-list-header nav-bar">
+                <ul class="nav-list">
+                    <li class="li-decor about"><a href=#top>About</a></li>
+                    <li class="li-decor"><a href=#>Zoos</a></li>
+                    <li class="li-decor map"><a href=#>Map</a></li>
+                    <li class="li-decor contact"><a href=#>Contact Us</a></li>
+                    <li class="li-decor"><a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp"
+                            target="_blank">Design</a></li>
+                </ul>
+            </nav>
+            <label class="label-mode-btn">
+                <div class="mode-btn">
+                    <input class="toggle-state" type="checkbox">
+                    <div class="knob">
+                    </div>
+                    </input>
+                </div>
+            </label>
+        </header>
+        <div class="watch-container">
+            <p class="watch-text">Watch your favourite <br />animal online</p>
+            <button class="watch-btn">
+                <span class="watch-logo-big"></span>
+            </button>
         </div>
-
     </section>
+
+    <script src="./indexJS.js"></script>
 </body>
 
 </html>
