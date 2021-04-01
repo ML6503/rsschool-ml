@@ -233,8 +233,10 @@ a {
     border-style: none;
 }
 
-.watch-btn:focus {
+.watch-btn:focus,
+.watch-logo-big:focus {
     border-style: none;
+    outline: none;
 }
 
 .watch-logo-big {
