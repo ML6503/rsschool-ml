@@ -500,7 +500,7 @@ input:focus {
 }
 
 .how-page {
-    width: calc(1920px / var(--size-divisor));
+    /* width: calc(1920px / var(--size-divisor)); */
     height: calc(1296px / var(--size-divisor));
     /* left: -22px;
     top: 1052px; */
@@ -644,20 +644,20 @@ top: 186px; */
 /* Pets in Zoo*/
 
 .pets-page {
-    width: 100%;
-    ;
-    height: 854px;
+    /* width: 100%; */
+    height: alc(854px / var(--size-divisor));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .pets-txt {
     width: 790px;
     height: 56px;
-    left: 565px;
-    top: 100px;
+    /* left: 565px;
+    margin-top: 100px; */
     font-weight: 900;
     font-size: 48px;
     line-height: 56px;
@@ -673,7 +673,7 @@ top: 186px; */
 }
 
 .panda-details-pet {
-     position: absolute;
+    position: absolute;
     left: calc(60px / var(--size-divisor));
     top: calc(235px / var(--size-divisor));
     /* width: 194px; */
@@ -684,7 +684,7 @@ top: 186px; */
 }
 
 .arrow {
-    padding:calc(5px / var(--size-divisor));
+    padding: calc(5px / var(--size-divisor));
 }
 
 .choose-btn {
@@ -696,6 +696,45 @@ top: 186px; */
 .pets-input::-webkit-slider-thumb {
     width: calc(30px / var(--size-divisor));
 }
+
+.feed-block {
+    width: 100%;
+    height: calc(754px / var(--size-divisor));
+    background: #F2F2F2;
+    margin-top: calc(100px / var(--size-divisor));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feed-h {
+    padding: calc(100px / var(--size-divisor));
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #333333;
+}
+
+.feed-txt {
+    width: 790px;
+height: 16px;
+/* left: 566px;
+top: 186px; */
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+color: #4F4F4F;
+}
+
+.feed-icons-container {
+    display: flex;
+    align-items: center;
+    height: 245px;
+
+}
+
 
 /* @media screen and (max-width: 1920px) { */
 /*90.01vh is apprx 940px*/
