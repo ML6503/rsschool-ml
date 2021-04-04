@@ -658,9 +658,6 @@ top: 186px; */
     height: 56px;
     left: 565px;
     top: 100px;
-
-    /* title_style */
-
     font-weight: 900;
     font-size: 48px;
     line-height: 56px;
@@ -672,12 +669,32 @@ top: 186px; */
     object-fit: fill;
     height: calc(352px / var(--size-divisor));
     width: calc(245px / var(--size-divisor));
+    padding: calc(15px / var(--size-divisor));
 }
 
+.panda-details-pet {
+     position: absolute;
+    left: calc(60px / var(--size-divisor));
+    top: calc(235px / var(--size-divisor));
+    /* width: 194px; */
+    font-size: 14px;
+    line-height: 16px;
+    /* top: 460px;
+    left: 382px; */
+}
+
+.arrow {
+    padding:calc(5px / var(--size-divisor));
+}
 
 .choose-btn {
     width: 245px;
     height: 55px;
+    margin-top: 30px;
+}
+
+.pets-input::-webkit-slider-thumb {
+    width: calc(30px / var(--size-divisor));
 }
 
 /* @media screen and (max-width: 1920px) { */
