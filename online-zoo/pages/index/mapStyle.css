@@ -16,7 +16,7 @@
 .map-h {
     width: 790px;
     height: 56px;
- 
+
     margin: 100px 0 60px;
 
     font-weight: 900;
@@ -53,4 +53,73 @@
     cursor: pointer;
     display: inline-block;
     margin: 0;
+}
+
+.pin {
+    position: absolute;
+   
+    /* justify-content: center; */
+}
+
+.eagle-pin {
+    margin: 65px 0 0 110px;
+}
+
+.alligator-pin {
+    margin: 90px 0 0 230px;
+}
+
+.ape-pin {
+    margin: 180px 0 0 560px;
+}
+
+.panda-pin {
+    margin: 80px 0 0 878px;
+}
+
+.tooltip-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.eagle-pin-tooltip {}
+
+.eagle-pin .eagle-pin-tooltip {
+    /* visibility: hidden; */
+    width: 436px;
+    height: 149px;    
+    background: #FEFEFE;
+    box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
+    border-radius: 8px;
+    text-align: center;
+ 
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.eagle-pin:hover .eagle-pin-text {
+    visibility: visible;
+}
+
+.pin-h {
+    width: 166px;
+height: 21px;
+/* left: 129px;
+top: 40px; */
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+/* Gray 1 */
+
+color: #333333;
 }
