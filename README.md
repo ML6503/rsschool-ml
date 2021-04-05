@@ -1,5 +1,5 @@
 # rsschool online-zoo
-https://ml6503.github.io/rsschool-ml/online-zoo
+https://ml6503.github.io/rsschool-ml/online-zoo/pages/index
 # rsschool-clean-code
 https://ml6503.github.io/rsschool-ml/clean-code-s1e1
 # rsschool-cv
