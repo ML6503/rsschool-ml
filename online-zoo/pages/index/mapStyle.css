@@ -1,0 +1,56 @@
+:root {
+    --size-divisor: 1;
+}
+
+
+.map-block {
+    width: 100%;
+    height: 904px;
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.map-h {
+    width: 790px;
+    height: 56px;
+ 
+    margin: 100px 0 60px;
+
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #333333;
+}
+
+.map-img {
+    width: 1200px;
+    height: 498px;
+    background: url(../../assets/images/map/map.svg) center no-repeat no-repeat;
+}
+
+.map-watch-btn {
+    width: 245px;
+    height: 55px;
+    margin-top: 35px;
+}
+
+.watch-logo-big:focus {
+    border-style: none;
+    outline: none;
+}
+
+.watch-logo-big {
+    /* width: calc(32px / var(--size-divisor));
+    height: calc(32px / var(--size-divisor)); */
+    width: calc(245px / var(--size-divisor));
+    height: calc(55px / var(--size-divisor));
+    background: url("../../assets/icons/watchLogoBig.svg") no-repeat top left;
+    background-size: cover;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+}
