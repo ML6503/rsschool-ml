@@ -57,7 +57,7 @@
 
 .pin {
     position: absolute;
-   
+    cursor: pointer;
     /* justify-content: center; */
 }
 
@@ -79,47 +79,52 @@
 
 .tooltip-info {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.pin-details {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.pin-p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4F4F4F;
 }
 
 .eagle-pin-tooltip {}
 
 .eagle-pin .eagle-pin-tooltip {
-    /* visibility: hidden; */
+    visibility: hidden;
+    margin: 20px 0 0 -300px;
     width: 436px;
-    height: 149px;    
+    height: 149px;
     background: #FEFEFE;
     box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
     border-radius: 8px;
     text-align: center;
- 
+
 
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
 }
 
-.eagle-pin:hover .eagle-pin-text {
+.eagle-pin:hover .eagle-pin-tooltip {
     visibility: visible;
 }
 
 .pin-h {
-    width: 166px;
-height: 21px;
-/* left: 129px;
+    height: 21px;
+    /* left: 129px;
 top: 40px; */
 
-font-family: Roboto;
-font-style: normal;
-font-weight: 900;
-font-size: 18px;
-line-height: 21px;
-/* identical to box height */
-
-
-/* Gray 1 */
-
-color: #333333;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
 }
