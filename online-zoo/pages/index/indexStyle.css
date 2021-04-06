@@ -69,15 +69,10 @@ button:focus {
 
 
 .nav-header {
-    height: calc(94px / var(--size-divisor));
-    /*apprx 94px (10.84vh?)*/
-    /* min-width: 100%; */
-    /* width: auto; */
-    /* height: 100%; */
+    height: calc(94px / var(--size-divisor)); 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* justify-content: center; */
     margin: 0;
     background-color: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
@@ -240,6 +235,8 @@ button:focus {
 .toggle-state:checked~.knob {
     transform: translate3d(95%, 0, 0);
 }
+
+/* Watch online block*/
 
 .watch-container {
     margin-left: calc(360px / var(--size-divisor));
