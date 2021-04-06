@@ -15,6 +15,7 @@ a {
     color: #333333;
     text-decoration: none;
 }
+
 button {
     padding: 0;
     background: none;
@@ -30,16 +31,14 @@ button:focus {
     /* border: none; */
 }
 
-
 .background-body {
     background-color: #FFFFFF;
     margin: 0;
 
 }
 
-
 .nav-header {
-    height: calc(94px / var(--size-divisor)); 
+    height: calc(94px / var(--size-divisor));
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,12 +47,6 @@ button:focus {
     box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
     color: #333333;
 }
-
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-/* .sticky {
-    position: fixed;
-    width: 100%
-} */
 
 .logo-container {
     width: calc(59px / var(--size-divisor));
@@ -71,31 +64,24 @@ button:focus {
 }
 
 .zoo-text {
-    /* width: 59px; */
-    /* height: 42px; */
     text-align: left;
     font-size: calc(36px / var(--size-divisor));
     font-style: normal;
     line-height: calc(42px / var(--size-divisor));
-    /* padding-top: -10px; */
-
 }
 
 .online-text {
     padding-left: 1px;
     text-align: left;
     font-size: calc(18px / var(--size-divisor));
-    line-height: calc(11px / var(--size-divisor)); 
+    line-height: calc(11px / var(--size-divisor));
     letter-spacing: 0.08em;
     margin: 0;
-
 }
 
 .nav-list-header {
     align-self: center;
 }
-
-.nav-bar {}
 
 .nav-list {
     display: flex;
@@ -105,7 +91,6 @@ button:focus {
 
 .nav-list li {
     list-style: none;
-    /* padding: 0 calc(41.5px / var(--size-divisor)); */
 }
 
 .map {
@@ -178,7 +163,7 @@ button:focus {
     margin-top: calc(5px / var(--size-divisor));
     margin-left: calc(6px / var(--size-divisor));
     border-radius: 50%;
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF;
     box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
     transform: translate3d(15%, 0, 0);
     transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
@@ -201,32 +186,31 @@ button:focus {
 
 .choose-h {
     width: 790px;
-height: 56px;
-font-weight: 900;
-font-size: 48px;
-line-height: 56px;
-text-align: center;
+    height: 56px;
+    margin-top: 60px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
 }
 
 .choose-txt {
     width: 790px;
-height: 80px;
-
-margin-top: 20px;
-
-font-weight: normal;
-font-size: 14px;
-line-height: 1.3;
-color: #4F4F4F;
+    height: 80px;
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #4F4F4F;
 }
 
 .map-slider {
     width: 1199px;
-height: 238px;
-/* margin-left: 361px; */
-display: flex;
-align-items: center;
-justify-content: space-around;
+    height: 238px;
+    /* margin-left: 361px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
@@ -234,7 +218,7 @@ justify-content: space-around;
     width: calc(245px / var(--size-divisor));
     height: calc(49px / var(--size-divisor));
     margin-top: calc(20px / var(--size-divisor));
-    margin-bottom:  calc(80px / var(--size-divisor));
+    margin-bottom: calc(80px / var(--size-divisor));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -310,7 +294,7 @@ input:focus {
     padding: 46px 0 100px 0;
 }
 
-/* FOOTER*/ 
+/* FOOTER*/
 
 .footer-block {
     width: 100%;
