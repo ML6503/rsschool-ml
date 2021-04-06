@@ -79,9 +79,16 @@
 
 .tooltip-info {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.pin-details-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pin-details {
@@ -100,7 +107,7 @@
 
 .eagle-pin .eagle-pin-tooltip {
     visibility: hidden;
-    margin: 20px 0 0 -300px;
+    margin: -40px 0 0 -360px;
     width: 436px;
     height: 149px;
     background: #FEFEFE;
@@ -119,12 +126,31 @@
 }
 
 .pin-h {
-    height: 21px;
+    height: 21px; 
     /* left: 129px;
-top: 40px; */
+    top: 40px; */
 
     font-weight: 900;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+}
+
+.pin svg:hover {
+    background-color: #EB5757;
+}
+
+.map-watch-btn {
+    visibility: hidden;
+    width: 115px;
+    height: 29px;
+    margin-top: 0;
+}
+
+.eagle-pin-tooltip:hover .map-watch-btn {
+    visibility: visible;
+}
+
+.eagle-pin-tooltip:hover  {
+    height: 192px;
 }
