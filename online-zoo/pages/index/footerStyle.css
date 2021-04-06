@@ -282,3 +282,17 @@ ul {
     margin-top: 28px;
 }
 
+/*social icons nav*/
+.net-icon {
+    width: calc(20px / var(--size-divisor));
+    height: auto;
+}
+
+.socials {
+    display: flex;
+    height: calc(20px / var(--size-divisor));
+    width: calc(125px / var(--size-divisor));
+    margin-top: calc(20px / var(--size-divisor));
+    align-items: center;
+    justify-content: space-between;
+}
