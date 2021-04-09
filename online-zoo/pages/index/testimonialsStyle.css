@@ -24,6 +24,10 @@
     color: #333333;
 }
 
+.arrow-testimonials {
+    cursor: pointer;
+}
+
 .review-slider {
     /* padding: 61px 310px 49px 310px; */
 

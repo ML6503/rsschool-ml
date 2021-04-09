@@ -359,6 +359,7 @@ button {
     height:  calc(203px / var(--size-divisor)); */
     width: 140px;
     height: 203px;
+    cursor: pointer;
 }
 
 .panda {
@@ -375,7 +376,7 @@ button {
     top: calc(216px / var(--size-divisor));
 }
 
-.panda-info {
+.pet-txt {
 
     height: calc(48px / var(--size-divisor));
     width: calc(185px / var(--size-divisor));
@@ -696,6 +697,17 @@ top: 186px; */
    
 }
 
+.eagles-details-pet {
+    position: absolute;
+    left: calc(340px / var(--size-divisor));
+    top: calc(230px / var(--size-divisor));
+    /* width: 194px; */
+    font-size: 14px;
+    line-height: 16px;
+    z-index: 2;
+   
+}
+
 .one-pet .faded {
     background-color: #666666;
         position: absolute;
@@ -765,7 +777,7 @@ top: 186px; */
 /* @media screen and (max-width: 1920px) { */
 /*90.01vh is apprx 940px*/
 
-/* @media (min-width:320px) {
+ @media (min-width:320px) {
     :root {
         --size-divisor: 1.83;
     }
@@ -781,7 +793,7 @@ top: 186px; */
     :root {
         --size-divisor: 1.27;
     }
-} */
+} 
 
 @media (min-width: 1920px) {
     :root {

@@ -213,6 +213,14 @@ button:focus {
     justify-content: space-around;
 }
 
+.map-slider img,
+.map-slider image {
+    cursor: pointer;    
+}
+
+.map-slider img:hover {    
+    transform: scale(1.2);
+}
 
 .slider-bar {
     width: calc(245px / var(--size-divisor));
