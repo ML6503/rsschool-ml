@@ -3,10 +3,10 @@
 window.onscroll = () => fixedHeader();
 
 // Get the header
-var header = document.getElementById("zooHeader");
+const header = document.getElementById("zooHeader");
 
 // Get the offset position of the navbar
-var sticky = header.offsetTop;
+const sticky = header.offsetTop;
 
 // Add the sticky class to the header so it always has top as its scroll position. 
 //Remove "sticky" when you leave the scroll position

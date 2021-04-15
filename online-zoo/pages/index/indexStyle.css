@@ -684,47 +684,46 @@ top: 186px; */
     height: calc(352px / var(--size-divisor));
     width: calc(245px / var(--size-divisor));
     padding: calc(15px / var(--size-divisor));
+    -webkit-filter: brightness(100%);
+	-moz-filter: brightness(100%);
+	-o-filter: brightness(100%);
+	-ms-filter: brightness(100%);
+	filter: brightness(100%);
 }
 
-.panda-details-pet {
+.pet-img:hover,
+.details-pet-zoo:hover ~ .pet-img {
+    -webkit-filter: brightness(60%);
+	-moz-filter: brightness(60%);
+	-o-filter: brightness(60%);
+	-ms-filter: brightness(60%);
+	filter: brightness(60%);
+}
+
+.details-pet-zoo {
     position: absolute;
-    left: calc(70px / var(--size-divisor));
-    top: calc(230px / var(--size-divisor));
-    /* width: 194px; */
+    top: 230px;
     font-size: 14px;
     line-height: 16px;
     z-index: 2;
-   
 }
 
-.eagles-details-pet {
-    position: absolute;
-    left: calc(340px / var(--size-divisor));
-    top: calc(230px / var(--size-divisor));
-    /* width: 194px; */
-    font-size: 14px;
-    line-height: 16px;
-    z-index: 2;
-   
+.panda-details-pet {   
+    left: calc(70px / var(--size-divisor));    
+    /* width: 194px; */   
 }
 
-.one-pet .faded {
-    background-color: #666666;
-        position: absolute;
-        top: 0;
-        left: 0;
-        -webkit-transition: all 400ms ease-out;
-        -moz-transition: all 400ms ease-out;
-        -o-transition: all 400ms ease-out;
-        -ms-transition: all 400ms ease-out;
-        transition: all 400ms ease-out;
-        opacity: 0;
-        height: calc(352px / var(--size-divisor));
-        width: calc(245px / var(--size-divisor));
-        padding: 0;
-        margin: 15px 0 0 43px;
-        border-radius: 1%;
-        color: #FFFFFF;
+.eagles-details-pet {    
+    left: 340px;    
+    /* width: 194px; */   
+}
+
+.ape-details-pet {
+    left: 620px;    
+}
+
+.alligator-details-pet {
+    left: 900px;    
 }
 
 .one-pet .details-pet { 
@@ -749,13 +748,6 @@ top: 186px; */
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
 }
-
-
-.one-pet:hover .faded{
-    opacity: 0.6;
-    z-index: 1;
-}
-
 
 .arrow {
     padding: calc(5px / var(--size-divisor));

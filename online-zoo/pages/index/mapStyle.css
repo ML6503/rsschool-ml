@@ -46,8 +46,8 @@
 .watch-logo-big {
     /* width: calc(32px / var(--size-divisor));
     height: calc(32px / var(--size-divisor)); */
-    width: calc(245px / var(--size-divisor));
-    height: calc(55px / var(--size-divisor));
+    width: 245px;
+    height: 55px;
     background: url("../../assets/icons/watchLogoBig.svg") no-repeat top left;
     background-size: cover;
     cursor: pointer;
