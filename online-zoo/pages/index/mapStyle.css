@@ -61,6 +61,28 @@
     /* justify-content: center; */
 }
 
+.pin-selected {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.pin-selected:hover,
+.eagle-pin-tooltip:hover~.pin-selected {
+    opacity: 1;
+}
+
+
+.pin-selected-am {
+    margin: 1.1vh 0 0 1.4vh;
+}
+
+.pin-selected-ea {
+    margin: 1.15vh 0 0 1.35vh;
+}
+
+
 .eagle-pin {
     margin: 65px 0 0 110px;
 }
@@ -83,17 +105,21 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    width: 100%;
+    height: auto;
 }
 
 .pin-details-frame {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    /* width: 100%; */
+    /* padding-left: 4.4vw;    */
 }
 
 .pin-details {
     margin-left: 20px;
-    text-align: left;
+    text-align: left;    
 }
 
 .pin-p {
@@ -103,54 +129,69 @@
     color: #4F4F4F;
 }
 
-.eagle-pin-tooltip {}
+.pin-tooltip {
+    
+}
 
-.eagle-pin .eagle-pin-tooltip {
+.pin .pin-tooltip {
     visibility: hidden;
     margin: -40px 0 0 -360px;
-    width: 436px;
-    height: 149px;
+    /* width: 436px; */
+    width: 22.7vw;
+    /* height: 149px; */
+    height: 15.851063829vh;
     background: #FEFEFE;
     box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
     border-radius: 8px;
     text-align: center;
-
-
+    
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
 }
 
-.eagle-pin:hover .eagle-pin-tooltip {
-    visibility: visible;
+.pin:hover .pin-tooltip {
+    visibility: visible;    
+}
+
+.pin-tooltip:hover .pin-h {
+    margin-top: 0;
 }
 
 .pin-h {
-    height: 21px; 
+    height: 21px;
     /* left: 129px;
     top: 40px; */
-
+    margin-top:20% ;
     font-weight: 900;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
 }
 
-.pin svg:hover {
+/* .pin svg:hover {
     background-color: #EB5757;
-}
+} */
 
 .map-watch-btn {
     visibility: hidden;
     width: 115px;
     height: 29px;
     margin-top: 0;
+    align-self: flex-start;
 }
 
-.eagle-pin-tooltip:hover .map-watch-btn {
+.pin-tooltip:hover .map-watch-btn {
     visibility: visible;
 }
 
-.eagle-pin-tooltip:hover  {
-    height: 192px;
+.pin-tooltip:hover {
+    /* height: 192px; */
+    height: 20.44vh;
+    padding-top: 0;
+}
+
+.tooltip-img {
+    width: 65px;
+    height: 65px;
 }
