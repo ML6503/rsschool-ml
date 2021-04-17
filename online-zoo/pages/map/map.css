@@ -302,6 +302,10 @@ input:focus {
     padding: 46px 0 100px 0;
 }
 
+image:hover {
+    /* fill: #EB5757; */
+    fill: green;
+}
 /* FOOTER*/
 
 .footer-block {
