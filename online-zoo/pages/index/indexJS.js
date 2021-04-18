@@ -1,7 +1,3 @@
-
-// When the user scrolls the page, execute myFunction
-window.onscroll = () => fixedHeader();
-
 // Get the header
 const header = document.getElementById("zooHeader");
 
