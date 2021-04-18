@@ -1513,25 +1513,25 @@ ul {
 /* @media screen and (max-width: 1920px) { */
 /*90.01vh is apprx 940px*/
 
- @media (min-width:320px) {
+ @media screen and (max-width:320px) {
     :root {
         --size-divisor: 1.83;
     }
 }
 
-@media (min-width: 640px) {
+@media screen and (max-width: 640px) {
     :root {
         --size-divisor: 1.67;
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
     :root {
         --size-divisor: 1.27;
     }
 } 
 
-@media (min-width: 1920px) {
+@media screen and (max-width: 1920px) {
     :root {
         --size-divisor: 1;
     }
