@@ -1,4 +1,4 @@
-const animals = [{
+export const pets = [{
         id: "panda",
         url: "panda.html",
         cam: "https://www.youtube.com/embed/OObOQ2GElhA",
