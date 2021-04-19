@@ -8,9 +8,9 @@
     <meta name="author" content="ML AKA Arethel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Zoo</title>
-    <link rel="stylesheet" media='screen and (min-width: 1201px)' href="large.css" >
+    <link rel="stylesheet" media='screen and (min-width: 1201px)' href="large.css">
     <link rel='stylesheet' media='screen and (min-width: 641px) and (max-width: 1200px)' href='medium.css' />
-    <link rel='stylesheet' media='screen and (min-width: 321px) and (max-width: 640px)' href='small.css' />
+    <link rel='stylesheet' media='screen and (min-width: 321px) and (max-width: 640px)' href='tablet.css' />
     <link rel='stylesheet' media='screen and (max-width: 320px)' href='mobile.css' />
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,36 +20,46 @@
 <body class="background-body">
 
     <!-- <section class="main-page"> -->
-        <header class="nav-header" id="zooHeader">
-            <h1 style="margin: 0">
-                <a href=# class="logo-container">
-                    <span class="zoo-text">zoo</span>
-                    <span class="online-text">online</span>
-                </a>
-            </h1>
+    <header class="nav-header" id="zooHeader">
+        <h1 style="margin: 0">
+            <a href=# class="logo-container">
+                <span class="zoo-text">zoo</span>
+                <span class="online-text">online</span>
+            </a>
+        </h1>
 
-            <nav class="nav-list-header nav-bar" role="navigation">
-                <ul class="nav-list">
-                    <li class="li-decor about"><a class="current" href=#top>About</a></li>
-                    <li class="li-decor"><a href=#>Zoos</a></li>
-                    <li class="li-decor map"><a href="../map/map.html">Map</a></li>
-                    <li class="li-decor contact"><a href="#contact-form">Contact Us</a></li>
-                    <li class="li-decor"><a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp"
-                            target="_blank">Design</a></li>
-                </ul>
-            </nav>
-            <label class="label-mode-btn">
-                <div class="mode-btn">
-                    <input class="toggle-state" type="checkbox">
-                    <div class="knob">
-                    </div>
-                    </input>
+        <nav class="nav-list-header nav-bar" role="navigation">
+            <ul class="nav-list">
+                <li class="li-decor about"><a class="current" href=#top>About</a></li>
+                <li class="li-decor"><a href=#>Zoos</a></li>
+                <li class="li-decor map"><a href="../map/map.html">Map</a></li>
+                <li class="li-decor contact"><a href="#contact-form">Contact Us</a></li>
+                <li class="li-decor"><a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp"
+                        target="_blank">Design</a></li>
+            </ul>
+            <a class="burger-menu" >
+                
+                <svg width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="1.5" x2="40" y2="1.5" stroke="#333333" stroke-width="3"/>
+                    <line y1="10.5" x2="40" y2="10.5" stroke="#333333" stroke-width="3"/>
+                    <line x1="7" y1="19.5" x2="40" y2="19.5" stroke="#333333" stroke-width="3"/>
+                    </svg>
+                    
+                
+            </a>
+        </nav>
+        <label class="label-mode-btn">
+            <div class="mode-btn">
+                <input class="toggle-state" type="checkbox">
+                <div class="knob">
                 </div>
-            </label>
-        </header>
+                </input>
+            </div>
+        </label>
+    </header>
 
-        <!-- Watch online block -->
-        <section class="main-page">
+    <!-- Watch online block -->
+    <section class="main-page">
         <section class="watch-container">
             <h3 class="watch-text">Watch your favorite <br />animal online</h3>
             <button class="watch-btn">
@@ -350,39 +360,46 @@
         </div>
         <div class="feed-icons-container">
             <span class="feed-icon visa-icon"></span>
-            <span >
-                <svg class="arrow-left" width="108" height="16" viewBox="0 0 108 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span>
+                <!-- arrow icon -->
+                <svg class="arrow-left" width="49" height="16" viewBox="0 0 49 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
-                        d="M107.707 8.70711C108.098 8.31658 108.098 7.68342 107.707 7.29289L101.343 0.928932C100.953 0.538408 100.319 0.538408 99.9289 0.928932C99.5384 1.31946 99.5384 1.95262 99.9289 2.34315L105.586 8L99.9289 13.6569C99.5384 14.0474 99.5384 14.6805 99.9289 15.0711C100.319 15.4616 100.953 15.4616 101.343 15.0711L107.707 8.70711ZM0 9L107 9V7L0 7L0 9Z"
+                        d="M48.7071 8.70711C49.0976 8.31658 49.0976 7.68342 48.7071 7.29289L42.3431 0.928932C41.9526 0.538408 41.3195 0.538408 40.9289 0.928932C40.5384 1.31946 40.5384 1.95262 40.9289 2.34315L46.5858 8L40.9289 13.6569C40.5384 14.0474 40.5384 14.6805 40.9289 15.0711C41.3195 15.4616 41.9526 15.4616 42.3431 15.0711L48.7071 8.70711ZM0 9L48 9V7L0 7L0 9Z"
                         fill="url(#paint0_linear)" />
                     <defs>
-                        <linearGradient id="paint0_linear" x1="-19.9789" y1="8" x2="-19.827" y2="12.9337"
+                        <linearGradient id="paint0_linear" x1="-8.9625" y1="8" x2="-8.62516" y2="12.9153"
                             gradientUnits="userSpaceOnUse">
                             <stop stop-color="#4BD8B5" />
                             <stop offset="1" stop-color="#49D6DF" />
                         </linearGradient>
                     </defs>
                 </svg>
+
+
             </span>
             <span class="feed-icon zoo-icon"></span>
-            <span >
-                <svg class="arrow-left" width="108" height="16" viewBox="0 0 108 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span>
+                <!--  arrow icon -->
+                <svg class="arrow-left" width="49" height="16" viewBox="0 0 49 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
-                        d="M107.707 8.70711C108.098 8.31658 108.098 7.68342 107.707 7.29289L101.343 0.928932C100.953 0.538408 100.319 0.538408 99.9289 0.928932C99.5384 1.31946 99.5384 1.95262 99.9289 2.34315L105.586 8L99.9289 13.6569C99.5384 14.0474 99.5384 14.6805 99.9289 15.0711C100.319 15.4616 100.953 15.4616 101.343 15.0711L107.707 8.70711ZM0 9L107 9V7L0 7L0 9Z"
+                        d="M48.7071 8.70711C49.0976 8.31658 49.0976 7.68342 48.7071 7.29289L42.3431 0.928932C41.9526 0.538408 41.3195 0.538408 40.9289 0.928932C40.5384 1.31946 40.5384 1.95262 40.9289 2.34315L46.5858 8L40.9289 13.6569C40.5384 14.0474 40.5384 14.6805 40.9289 15.0711C41.3195 15.4616 41.9526 15.4616 42.3431 15.0711L48.7071 8.70711ZM0 9L48 9V7L0 7L0 9Z"
                         fill="url(#paint0_linear)" />
                     <defs>
-                        <linearGradient id="paint0_linear" x1="-19.9789" y1="8" x2="-19.827" y2="12.9337"
+                        <linearGradient id="paint0_linear" x1="-8.9625" y1="8" x2="-8.62516" y2="12.9153"
                             gradientUnits="userSpaceOnUse">
                             <stop stop-color="#4BD8B5" />
                             <stop offset="1" stop-color="#49D6DF" />
                         </linearGradient>
                     </defs>
                 </svg>
+
             </span>
             <span class="feed-icon panda-icon"></span>
 
         </div>
-        <a href=# >
+        <a href=#>
             <img class="donate-btn" src="../../assets/icons/donateButton.svg" alt="Donate green button icon">
         </a>
     </section>
@@ -398,7 +415,7 @@
                 </svg>
             </span>
 
-            <section class="review">
+            <section class="review review-user-1">
                 <span class="user-frame user-1"></span>
                 <h3 class="user-name">Nastya Sidorova</h3>
                 <p class="feedback">
@@ -442,7 +459,7 @@
             <span class="pin eagle-pin">
                 <img class="pin-selected pin-selected-am" src="../../assets/icons/pinSelected.svg">
                 <img src="../../assets/images/map/eaglePin.png">
-                
+
                 <span class="tooltip-info pin-tooltip">
                     <div class="pin-details-frame">
                         <img src="../../assets/images/map/eagleTooltip.png" alt="Eagle head in round frame">
@@ -456,7 +473,7 @@
                             </a>
                         </article>
                     </div>
-                    
+
                 </span>
             </span>
             <span class="pin alligator-pin">
@@ -464,7 +481,8 @@
                 <img src="../../assets/images/map/alligatorPin.png">
                 <span class="tooltip-info pin-tooltip">
                     <div class="pin-details-frame">
-                        <img class="tooltip-img" src="../../assets/images/map-page/alligator.png" alt="Eagle head in round frame">
+                        <img class="tooltip-img" src="../../assets/images/map-page/alligator.png"
+                            alt="Eagle head in round frame">
                         <article class="pin-details">
                             <h3 class="pin-h">Alligator</h3>
                             <p class="pin-p"> <b>Region:</b> Miami</p>
@@ -474,7 +492,7 @@
                                     alt="White button with green border and letter to watch online">
                             </a>
                         </article>
-                    </div>                    
+                    </div>
                 </span>
             </span>
             <span class=" pin ape-pin">
@@ -482,7 +500,8 @@
                 <img src="../../assets/images/map/apePin.png">
                 <span class="tooltip-info pin-tooltip">
                     <div class="pin-details-frame">
-                        <img class="tooltip-img" src="../../assets/images/map-page/ape.png" alt="Eagle head in round frame">
+                        <img class="tooltip-img" src="../../assets/images/map-page/ape.png"
+                            alt="Eagle head in round frame">
                         <article class="pin-details">
                             <h3 class="pin-h">Gorilla</h3>
                             <p class="pin-p"> <b>Region:</b> Africa</p>
@@ -492,7 +511,7 @@
                                     alt="White button with green border and letter to watch online">
                             </a>
                         </article>
-                    </div>                    
+                    </div>
                 </span>
             </span>
             <span class=" pin panda-pin">
@@ -500,7 +519,8 @@
                 <img src="../../assets/images/map/pandaPin.png">
                 <span class="tooltip-info pin-tooltip">
                     <div class="pin-details-frame">
-                        <img class="tooltip-img" src="../../assets/images/map-page/panda.png" alt="Eagle head in round frame">
+                        <img class="tooltip-img" src="../../assets/images/map-page/panda.png"
+                            alt="Eagle head in round frame">
                         <article class="pin-details">
                             <h3 class="pin-h">Panda</h3>
                             <p class="pin-p"> <b>Region:</b> China</p>
@@ -510,7 +530,7 @@
                                     alt="White button with green border and letter to watch online">
                             </a>
                         </article>
-                    </div>                    
+                    </div>
                 </span>
             </span>
         </div>
@@ -607,7 +627,7 @@
                                 fill="#FEFEFE" />
                         </svg>
                     </a>
-                    
+
                     <a class="net-icon" href="https://vk.com" target="_blank">
                         <svg viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg"
                             preserveAspectRatio="xMidYMid meet">

@@ -136,6 +136,11 @@ button:focus {
     width: 100%;
 }
 
+.burger-menu {
+    visibility: hidden;
+    display: none;;
+}
+
 .nav-list li {
     list-style: none;
     /* padding: 41.5px; */
