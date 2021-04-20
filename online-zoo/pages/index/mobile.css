@@ -253,7 +253,7 @@ button:focus {
     /* height: calc(208px / var(--size-divisor)); */
     margin: 92px 0 0 0;
     font-weight: 900;
-    font-size: 48px;
+    font-size: calc(64px / var(--size-divisor));
     /* line-height: calc(104px / var(--size-divisor)); */
     line-height: 1.2;
     color: #FEFEFE;
@@ -268,7 +268,8 @@ button {
 .watch-btn {
     align-self: flex-start;
     /* top: calc(451px / var(--size-divisor)); */
-    top: 370px;
+    /* top: 375px; */
+    top: 27vh;
     position: absolute;
     z-index: 1;
 }

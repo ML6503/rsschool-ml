@@ -285,6 +285,16 @@ button {
     z-index: 1;
 }
 
+@media screen and (min-width: 1201px) and (max-width: 1470px) {
+    .watch-btn {
+        top: 25rem;
+    }
+    .watch-text {
+        margin: 8rem 0 0 0;
+        font-size: 64px;
+    } 
+}
+
 .watch-btn:focus,
 .watch-logo-big:focus {
     border-style: none;
