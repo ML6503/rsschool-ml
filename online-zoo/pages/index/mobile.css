@@ -12,8 +12,9 @@ body {
     font-size: 16px;
     height: 669px;
     margin: 0;
-    width: 100%;
-    overflow-x: hidden;
+    /* width: 100%; */
+    max-width: 320px;
+    /* overflow-x: hidden; */
     /* overflow: hidden; */
 }
 
@@ -253,7 +254,7 @@ button:focus {
     /* height: calc(208px / var(--size-divisor)); */
     margin: 92px 0 0 0;
     font-weight: 900;
-    font-size: calc(64px / var(--size-divisor));
+    font-size: 48px;
     /* line-height: calc(104px / var(--size-divisor)); */
     line-height: 1.2;
     color: #FEFEFE;
@@ -269,7 +270,7 @@ button {
     align-self: flex-start;
     /* top: calc(451px / var(--size-divisor)); */
     /* top: 375px; */
-    top: 27vh;
+    top: 375px;
     position: absolute;
     z-index: 1;
 }
@@ -298,7 +299,7 @@ button {
     /* min-width: calc(1124px / var(--size-divisor)); */
     margin-top: 100px;
     min-width: 720px;
-    right: -330px;
+    right: -90px;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -414,7 +415,7 @@ button {
     flex-direction: column;
     align-items: center;
     /* margin-left: calc(1161px / var(--size-divisor)); */
-    margin-right: 390px;
+    margin-right: 145px;
 }
 
 .slider-output {
@@ -489,6 +490,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
     /* justify-content: center; */
     /* height: 1652px;
     width: 320px; */
@@ -1535,9 +1537,14 @@ ul {
 /* @media screen and (max-width: 1920px) { */
 /*90.01vh is apprx 940px*/
 
-@media screen and (max-width:320px) {
+@media screen and (min-width:320px) {
     :root {
         --size-divisor: 1.83;
+    }
+
+    .alligator-img,
+    .fox-img {
+        display: none !important;
     }
 }
 

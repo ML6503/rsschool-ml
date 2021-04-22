@@ -129,7 +129,7 @@ button:focus {
 
 .about {
     padding-right: 83px;
-    margin-left: 143px;
+    margin-left: 14vw;
 }
 
 .contact {
@@ -177,7 +177,7 @@ button:focus {
     background-color: #F2F2F2;
     border-style: none;
     /* margin-right: calc(150px / var(--size-divisor)); */
-    margin-right: 8.125rem;
+    margin-right: 8vw;
     border-radius: 190px;
     isolation: isolate;
     position: relative;
