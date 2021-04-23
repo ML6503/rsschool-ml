@@ -1537,6 +1537,8 @@ ul {
     }
 }
 
+
+
 @media screen and (min-width: 1201px) {
     :root {
         --size-divisor: 1;

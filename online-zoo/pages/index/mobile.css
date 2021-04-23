@@ -38,7 +38,7 @@ button:focus {
     margin: 0;
     /* height: 934px; 
     width: 640px */
-
+    /* overflow: hidden; */
 }
 
 .main-page {
@@ -55,7 +55,7 @@ button:focus {
     -o-background-size: cover; */
 
     height: 669px;
-
+    overflow: hidden;
     left: 0;
     bottom: 0;
     z-index: -1;
@@ -64,6 +64,7 @@ button:focus {
 
 .nav-header {
     height: 92px;
+    /* width: 320px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -299,19 +300,18 @@ button {
     /* min-width: calc(1124px / var(--size-divisor)); */
     margin-top: 100px;
     min-width: 720px;
-    right: -90px;
+    right: 45px;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: flex-end;
-    position: absolute;
+    /* position: absolute;     */
 }
 
 .animals-images-container {
-    position: relative;
-    overflow: hidden;
+    /* position: relative; */
+    /* overflow: hidden; */
     align-self: flex-end;
-
 }
 
 .animals-images-watch {
@@ -319,11 +319,11 @@ button {
 }
 
 .animals-images {
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 2;
 }
 
@@ -331,7 +331,7 @@ button {
     position: absolute;
     width: 56.615vw;
     top: 45%;
-    left: 10vw;
+    left: 8vw;
 }
 
 .animal-img {
@@ -643,6 +643,7 @@ top: 186px; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
 }
 
@@ -1495,7 +1496,7 @@ ul {
     align-self: flex-start;
     margin-left: 21px;
     /* width: 1620.04px; */
-    width: 599px;
+    width: 300px;
     height:108px;    
     /* height: 17.8%; */
     
