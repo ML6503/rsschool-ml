@@ -18,13 +18,13 @@ function getChanges() {
     const suffix = this.dataset.sizing;
     document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
     setOutput();
-   blur = this.name === 'blur' ? this.value : document.getElementsByName('blur')[0].nextElementSibling.value;
-   console.log('blur', blur);
-   invert = this.name === 'invert' ? this.value : document.getElementsByName('invert')[0].nextElementSibling.value;;
-   sepia = this.name === 'sepia' ? this.value : document.getElementsByName('sepia')[0].nextElementSibling.value;;
-   saturate = this.name === 'saturate' ? this.value : document.getElementsByName('saturate')[0].nextElementSibling.value;
-   hue = this.name === 'hue' ? this.value : document.getElementsByName('saturate')[0].nextElementSibling.value;
-
+//    blur = this.name === 'blur' ? this.value : document.getElementsByName('blur')[0].nextElementSibling.value;
+//    console.log('blur', blur);
+//    invert = this.name === 'invert' ? this.value : document.getElementsByName('invert')[0].nextElementSibling.value;;
+//    sepia = this.name === 'sepia' ? this.value : document.getElementsByName('sepia')[0].nextElementSibling.value;;
+//    saturate = this.name === 'saturate' ? this.value : document.getElementsByName('saturate')[0].nextElementSibling.value;
+//    hue = this.name === 'hue' ? this.value : document.getElementsByName('saturate')[0].nextElementSibling.value;  
+    
 };
 
 
@@ -86,17 +86,13 @@ const images = ['01.jpg', '02.jpg', '03.jpg', '05.jpg', '06.jpg', '07.jpg', '08.
 let i = 0;
 
 // put image in canvas as per manual
-
 const canvas = document.querySelector('canvas');
-
     
     // const blur = getComputedStyle(document.documentElement).getPropertyValue('--blur');
     // const invert = getComputedStyle(document.documentElement).getPropertyValue('--invert');
     // const sepia = getComputedStyle(document.documentElement).getPropertyValue('--sepia');
     // const saturate = getComputedStyle(document.documentElement).getPropertyValue('--saturate');
     // const hue = getComputedStyle(document.documentElement).getPropertyValue('--hue');
-
-
 
 
   function drawImage(src) {
@@ -108,14 +104,10 @@ const canvas = document.querySelector('canvas');
     img.onload = function() {    
       canvas.width = img.width;
       canvas.height = img.height;
-      const ctx = canvas.getContext("2d");
-      ctx.filter = `blur(${blur}) invert(${invert}) sepia(${sepia}) saturate(${saturate}) hue(${hue})`;
-      ctx.filter = 'blur(4)'
+      const ctx = canvas.getContext('2d');
+    //   ctx.filter = `blur(${blur}) invert(${invert}) sepia(${sepia}) saturate(${saturate}) hue-rotate(${hue})`;      
       ctx.drawImage(img, 0, 0);
-     
-      console.log(ctx.filter, blur);
-      image.style.display = 'none';
-      canvas.style.display = 'block';      
+      image.src = src;     
     };   
   };
   
@@ -131,4 +123,17 @@ const canvas = document.querySelector('canvas');
   };
 
   nextBtn.addEventListener('click', getImage);
+
+  // upload file from PC
+  const fileInput = document.querySelector('input[type="file"]');
+const imageContainer = document.querySelector('img');
+
+fileInput.addEventListener('change', (e) => {
+  const file = fileInput.files[0];
+  const reader = new FileReader();
+  reader.onload = () => {
+      image.src = reader.result;
+  }
+  reader.readAsDataURL(file);
+});
 
