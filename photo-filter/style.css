@@ -13,6 +13,15 @@
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     overflow-x: hidden;
   }
+  canvas {
+    border:1px solid #000;
+    /* width: 500px;
+    height: 500px; */
+    max-height: 520px;
+    max-width: 830px;
+    display: none;
+    
+  }
   .header {
     text-align: center;
     width: 100%;
