@@ -10,27 +10,12 @@ function setOutput() {
 // get background img element and button next 
 const image = document.querySelector('img');
 
-// declare filters
-// let blur;
-// let invert;
-// let sepia;
-// let saturate;
-// let hue;
 // put new data of inputs to img
 function getChanges() {
     const suffix = this.dataset.sizing;
-    // document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
     image.style.setProperty(`--${this.name}`, this.value + suffix);
     setOutput();
-    //    blur = this.name === 'blur' ? this.value : document.getElementsByName('blur')[0].nextElementSibling.value;       
-    //    invert = this.name === 'invert' ? this.value : document.getElementsByName('invert')[0].nextElementSibling.value;;
-    //    sepia = this.name === 'sepia' ? this.value : document.getElementsByName('sepia')[0].nextElementSibling.value;;
-    //    saturate = this.name === 'saturate' ? this.value : document.getElementsByName('saturate')[0].nextElementSibling.value;
-    //    hue = this.name === 'hue' ? this.value : document.getElementsByName('saturate')[0].nextElementSibling.value;  
-
 };
-
-
 
 filters.forEach(f => f.addEventListener('change', getChanges));
 filters.forEach(f => f.addEventListener('mousemove', getChanges));
@@ -39,8 +24,7 @@ filters.forEach(f => f.addEventListener('mousemove', getChanges));
 function resetFilters() {
     filters.forEach(f => {
         f.value = f.defaultValue;
-        setOutput();
-        // document.documentElement.style.removeProperty(`--${f.name}`);
+        setOutput();        
         image.style.removeProperty(`--${f.name}`);
     });
 
@@ -66,7 +50,6 @@ for (let i = 0; i < buttons.length; i++) {
 }
 
 // get button next 
-// const image = document.querySelector('img');
 const nextBtn = document.querySelector('.btn-next');
 
 
@@ -94,11 +77,6 @@ let i = 0;
 // put image in canvas as per manual
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
-// const blur = getComputedStyle(document.documentElement).getPropertyValue('--blur');
-// const invert = getComputedStyle(document.documentElement).getPropertyValue('--invert');
-// const sepia = getComputedStyle(document.documentElement).getPropertyValue('--sepia');
-// const saturate = getComputedStyle(document.documentElement).getPropertyValue('--saturate');
-// const hue = getComputedStyle(document.documentElement).getPropertyValue('--hue');
 
 
 function drawImage(src) {
@@ -148,22 +126,6 @@ fileInput.addEventListener('change', (e) => {
 // save image to PC
 const saveButton = document.querySelector('.btn-save');
 
-// function drawImage(src) {
-//     const img = new Image();
-//     img.setAttribute('crossOrigin', 'anonymous');
-//     // img.crossOrigin = '*'; //to prevent CORB error for <image>. Should be BEFORE src apply
-
-//     img.src = src;
-//     img.onload = function () {
-//         canvas.width = img.width;
-//         canvas.height = img.height;
-
-//         //   ctx.filter = `blur(${blur}) invert(${invert}) sepia(${sepia}) saturate(${saturate}) hue-rotate(${hue})`;      
-//         ctx.drawImage(img, 0, 0);
-//         image.src = src;
-//     };
-// };
-
 function saveImg() {
     const img = new Image();
     img.setAttribute('crossOrigin', 'anonymous');
@@ -179,18 +141,12 @@ function saveImg() {
         const invert = getComputedStyle(image).getPropertyValue('--invert');
         const sepia = getComputedStyle(image).getPropertyValue('--sepia');
         const saturate = getComputedStyle(image).getPropertyValue('--saturate');
-        const hue = getComputedStyle(image).getPropertyValue('--hue');
-        console.log('blur', blur);
+        const hue = getComputedStyle(image).getPropertyValue('--hue');  
 
         const ctx = canvas.getContext('2d');
         ctx.filter = `blur(${blur * blurCorr}px) invert(${invert}) sepia(${sepia}) saturate(${saturate}) hue-rotate(${hue})`;
-        // ctx.filter = image.style;
-        console.log('ctx on save', ctx.filter);
-
-
+        
         ctx.drawImage(img, 0, 0);
-
-
         const link = document.createElement('a');
         link.setAttribute('download', 'newImg.png');
         link.href = image.src;
