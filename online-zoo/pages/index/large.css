@@ -973,8 +973,8 @@ top: 186px; */
 .review-slider {
     /* padding: 61px 310px 49px 310px; */
     /* width: 615px; */
-    padding-left: 310px;
-    padding-right: 310px;
+    /* padding-left: 310px;
+    padding-right: 310px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1133,7 +1133,7 @@ top: 58px; */
 }
 
 .pin-selected-ea {
-    margin: 1.15vh 0 0 1.35vh;
+    margin: 1.1vh 0 0 1.35vh;
 }
 
 
@@ -1187,11 +1187,9 @@ top: 58px; */
 
 .pin .pin-tooltip {
     visibility: hidden;
-    margin: -40px 0 0 -360px;
-    /* width: 436px; */
-    width: 22.7vw;
-    /* height: 149px; */
-    height: 15.851063829vh;
+    margin: -40px 0 0 -160px;
+    height: 149px;
+    width: 436px;
     background: #FEFEFE;
     box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
     border-radius: 8px;
@@ -1250,42 +1248,52 @@ top: 58px; */
 
 
 /*FOOTER */
+.footer-block-wrapper {
+    background: #333333;
+    max-width: 1920px;
+    display: block;
+    color: #FEFEFE;
+    /* height: 751px; */
+}
 
 .footer-block {
-    width: 100%;
-    height: 751px;
-    left: 0px;
-    bottom: 0px;
-    background: #333333;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* align-items: center; */
+    padding: 100px 150px 72px 150px;
+    /* width: 100%; */
+    /* height: 751px;     */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .footer {
-
+    width: 100%;
     display: flex;
-    /* align-items: flex-start; */
+    flex-direction: row;    
     align-items: flex-start;
     justify-content: space-between;
-    color: #FEFEFE;
+    padding-bottom: 57px;
 }
 
-
 .logo-container-footer {
-    width: calc(59px / var(--size-divisor));
-    height: calc(54px / var(--size-divisor));
+    width: 59px;
+    height: 54px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     /* align-self: center; */
     justify-content: center;
     cursor: pointer;
-    font-weight: 900;
-    margin-top: 22.5%;
-    /* margin-left: 10%; */
-    margin-bottom: 18%;
+    font-weight: 900;      
+}
+
+
+.contact-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;    
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 60px;
 }
 
 .footer-text {
@@ -1299,16 +1307,16 @@ top: 58px; */
 }
 
 .center-h {
-    margin-top: 6vh;
+    
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
 }
 
-.contact-frame {
-    margin-left: 7.8%;
-    margin-right: 22.5%;
+.contact-frame {   
+    left: 0;
+    align-self: flex-start;
 }
 
 .contact-form {
@@ -1430,7 +1438,8 @@ h3 {
 
 .zoo-center-frame {
     /* margin-top: 116px; */
-    margin-top: 10.8vh;
+    /* margin-top: 10.8vh; */
+    padding-left: 141px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1525,37 +1534,12 @@ ul {
 }
 
 .donate-footer {
-    margin-right: 7%;
-    margin-left: 7%;
+ 
     /* margin-top: 116px; */
-    margin-top: 5%;
+ 
 }
 
-.rights {
-    border-top: 0.5px solid #FEFEFE;
-    align-self: flex-start;
-    margin-left: 8vw;
-    /* width: 1620.04px; */
-    width: 85%;
-    /* height:133px; */
-    height: 17.8%;
-}
 
-.rights-reserved {
-    /* width: 278px; */
-    /* width: 100%; */
-    height: fit-content;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    color: #BDBDBD;
-}
-
-.rights-reserved p {
-    /* margin-top: 28px; */
-    margin-top: 3vh;
-    line-height: 1.4;
-}
 
 /*social icons nav*/
 .net-icon {
@@ -1570,6 +1554,32 @@ ul {
     margin-top: calc(20px / var(--size-divisor));
     align-items: center;
     justify-content: space-between;
+}
+
+
+.rights {
+    border-top: 0.5px solid #FEFEFE;
+    align-self: flex-start;
+    /* margin-left: 8vw; */
+    min-width: 1620.04px;
+    /* width: 80%; */
+    height:133px;
+    /* height: 17.8%; */
+}
+
+.rights-reserved {
+    /* width: 278px; */
+    /* width: 100%; */
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #BDBDBD;
+}
+
+.rights-reserved p {
+    /* margin-top: 28px; */
+    margin-top: 3vh;
+    line-height: 1.4;
 }
 
 
