@@ -1,3 +1,5 @@
+# rsschool photo-filter
+ https://ml6503.github.io/rsschool-ml/photo-filter/
 # rsschool online-zoo
 https://ml6503.github.io/rsschool-ml/online-zoo
 # rsschool-clean-code
