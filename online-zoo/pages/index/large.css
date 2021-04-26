@@ -1,6 +1,22 @@
 :root {
     --size-divisor: 1;
+    --background-color: #ffffff;
+    --second-background-color: #F2F2F2;
+    --feedback-card-background: #FEFEFE;    
+    --text-color: #333333;
+    --p-color: #4f4f4f;
+    --filter: none;   
 }
+
+[data-theme="dark"] {
+    --background-color: #333333;
+    --second-background-color: #4F4F4F;
+    --feedback-card-background: #3C3C3C;
+    --text-color : #FEFEFE;
+    --p-color: #F2F2F2;
+    --filter: invert(100%);   
+}
+
 
 html {
     font-size: 16px;
@@ -17,7 +33,7 @@ body {
 }
 
 a {
-    color: #333333;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -31,9 +47,11 @@ button:focus {
 }
 
 
+
 .background-body {
-    background-color: #FFFFFF;
+    background-color: var(--background-color);
     padding: 0;
+    color: var(--text-color);
     /* height: 100vh; */
 }
 
@@ -77,9 +95,9 @@ button:focus {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
-    color: #333333;
+    /* color: #333333; */
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -211,7 +229,7 @@ button:focus {
 .mode-btn {
     width: 54px;
     height: 30px;
-    background-color: #F2F2F2;
+    background-color: var(--second-background-color);
     border-style: none;
     /* margin-right: calc(150px / var(--size-divisor)); */
 
@@ -233,7 +251,7 @@ button:focus {
     /* position: relative; */
     border-radius: 50%;
 
-    background-color: #FFFFFF;
+    background-color: var( --background-color);
     /* 1 */
     box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
     transform: translate3d(15%, 0, 0);
@@ -314,12 +332,14 @@ button {
 }
 
 .animals-slider-wrapper {
-    max-width: 1087px;
+    /* max-width: 1087px; */
+    
     right: 0;
     position: absolute;
 }
 
 .animals-slider {
+    max-width: 1124px;
     /* min-width: calc(1124px / var(--size-divisor)); */
     /* max-width: 1124px; */
     padding-bottom: 111px;
@@ -340,7 +360,6 @@ button {
     /* min-height: 100%; */
     /* height: fit-content; */
     /* margin-top: 0; */
-
     right: -47px;
     position: relative;
     align-self: flex-end;
@@ -466,7 +485,7 @@ button {
 .slider-output {
     /* width: 53px; */
     /* height: calc(28px / var(--size-divisor)); */
-    height: 2.8vh;
+    /* height: 2.8vh; */
     /* left: 96px; */
     margin-top: -1vh;
     font-weight: 900;
@@ -482,6 +501,7 @@ button {
 
 
 .slider-input {
+    padding-top: 11px;
     /* width: calc(245px / var(--size-divisor)); */
     width: 245px;
     /* height: calc(10px / var(--size-divisor)); */
@@ -575,7 +595,7 @@ input:focus {
     font-weight: 900;
     font-size: calc(48px / var(--size-divisor));
     line-height: calc(56px / var(--size-divisor));
-    color: #333333;
+    /* color: #333333; */
     margin: 0 0 calc(30px / var(--size-divisor));
 }
 
@@ -588,11 +608,12 @@ top: 186px; */
 
     font-size: calc(14px / var(--size-divisor));
     line-height: 1.3;
-    color: #4F4F4F;
+    
 }
 
-.zoo-online-article p {
+.zoo-online-article-p {
     height: 80px;
+    color: var(--p-color);
 }
 
 .deer-img-frame {
@@ -620,7 +641,7 @@ top: 186px; */
 
 .how-output {
     padding: 29px 0 10px;
-    color: #333333;
+    color: var(--text-color);
     width: 62px;
     /* height: 10px; */
 }
@@ -647,7 +668,7 @@ top: 186px; */
 
 .how-input::-webkit-slider-thumb {
     width: calc(62px / var(--size-divisor));
-    background: #333333;
+    background: var(--text-color);
     margin-left: 0;
     margin-top: calc(-3px / var(--size-divisor));
 }
@@ -660,7 +681,7 @@ top: 186px; */
 /* our mission - inspire us block*/
 
 .inspire-block-wrapper {
-    background-color: #F2F2F2;
+    background-color: var(--second-background-color);
     display: block;
     height: 413px;
 }
@@ -701,7 +722,7 @@ top: 186px; */
     font-size: 20px;
     line-height: 23px;
     text-align: center;
-    color: #333333;
+    color: var(--text-color);
 }
 
 .footer-p {
@@ -709,13 +730,14 @@ top: 186px; */
     height: 48px;
     font-size: 14px;
     line-height: 1.3;
-    color: #4F4F4F;
+    color:var(--p-color);
 }
 
 /* Pets in Zoo*/
 
 .pets-block {
-    color: #FEFEFE;
+    background-color: var(--background-color);
+    /* background-color: currentColor */
 }
 
 .pets-page {
@@ -739,7 +761,7 @@ top: 186px; */
     font-size: calc(48px / var(--size-divisor));
     line-height: calc(56px / var(--size-divisor));
     text-align: center;
-    color: #333333;
+    color: var(--text-color);
     z-index: 2;
 }
 
@@ -750,7 +772,6 @@ top: 186px; */
 .pet-img {
     object-fit: fill;
     padding: 15px 15px 7px 15px;
-
     width: 30, 11vw;
     height: 42, 45vh;
     -webkit-filter: brightness(100%);
@@ -778,17 +799,17 @@ top: 186px; */
 }
 
 .panda-details-pet {
-    left: 65px;
+    left: 85px;
     /* width: 194px; */
 }
 
 .eagles-details-pet {
-    left: 380px;
+    left: 390px;
     /* width: 194px; */
 }
 
 .ape-details-pet {
-    left: 690px;
+    left: 700px;
 }
 
 .alligator-details-pet {
@@ -823,6 +844,10 @@ top: 186px; */
     cursor: pointer;
 }
 
+.arrow path:hover {
+    fill: currentColor;
+}
+
 .choose-btn {
     width: 245px;
     height: 55px;
@@ -841,7 +866,7 @@ top: 186px; */
 
 /* Pay and Feed block*/
 .feed-block-wrapper {
-    background: #F2F2F2;
+    background: var(--second-background-color);
     margin: 0;
     box-sizing: border-box;
 }
@@ -862,7 +887,7 @@ top: 186px; */
     font-size: 48px;
     line-height: 56px;
     text-align: center;
-    color: #333333;
+    color: var(--text-color);
 }
 
 .feed-txt {
@@ -873,18 +898,18 @@ top: 186px; */
     font-size: 14px;
     line-height: 16px;
     text-align: center;
-    color: #4F4F4F;
+    color:var(--p-color);
 
     padding: 20px 0 80px 0;
 }
 
 .feed-icons-container {
     /* height: 245px; */
-    align-self: flex-start;
+    
     width: 90%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     /* padding-right: 360px */
 }
 
@@ -896,8 +921,7 @@ top: 186px; */
 
 .feed-icon {
     width: 245px;
-    height: 245px;
-
+    height: 245px;    
 }
 
 .panda-icon {
@@ -917,7 +941,7 @@ top: 186px; */
     /* background-size: (245px / var(--size-divisor)) (245px / var(--size-divisor)); */
     background-size: 245px 245px;
     background-image: url(../../assets/icons/visa.svg);
-    margin-left: 330px;
+    /* margin-left: 330px; */
 
 }
 
@@ -933,6 +957,7 @@ top: 186px; */
     margin: 0;
     width: 100%;
 }
+
 
 .testimonials-block {
     padding-top: 100px;
@@ -953,12 +978,16 @@ top: 186px; */
     font-size: 48px;
     line-height: 56px;
     text-align: center;
-    color: #333333;
+    color: var(--text-color);
 }
 
 .arrow-testimonials {
     cursor: pointer;
     padding: 0 25px;
+}
+
+.arrow-testimonials path:hover {
+    fill: currentColor;
 }
 
 
@@ -990,7 +1019,7 @@ top: 11px; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #FEFEFE;
+    background-color: var(--feedback-card-background);
     box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
     border-radius: 5px;
 }
@@ -1020,7 +1049,7 @@ top: 58px; */
     font-size: 20px;
     line-height: 23px;
     text-align: center;
-    color: #333333;
+    color: var(--text-color);
     padding: 20px 0;
 }
 
@@ -1034,7 +1063,7 @@ top: 58px; */
     font-weight: normal;
     font-size: 14px;
     line-height: 1.3;
-    color: #4F4F4F;
+    color:var(--p-color);
     padding-bottom: 60px;
 }
 
@@ -1058,7 +1087,7 @@ top: 58px; */
 .map-block {
     width: 100%;
     height: 904px;
-    background: #F2F2F2;
+    background: var( --second-background-color);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1075,13 +1104,14 @@ top: 58px; */
     font-size: 48px;
     line-height: 56px;
     text-align: center;
-    color: #333333;
+    color: var(--text-color);
 }
 
 .map-img {
     width: 1200px;
     height: 498px;
     background: url(../../assets/images/map/map.svg) center no-repeat no-repeat;
+    filter: var(--filter);
 }
 
 .map-watch-btn-big {
@@ -1111,23 +1141,25 @@ top: 58px; */
     position: absolute;
     cursor: pointer;
     /* justify-content: center; */
+    filter: var(--filter);
 }
 
 .pin-selected {
     opacity: 0;
     position: absolute;
     cursor: pointer;
-    z-index: 1;
+    
 }
 
 .pin-selected:hover,
 .eagle-pin-tooltip:hover~.pin-selected {
     opacity: 1;
+    z-index: 10;
 }
 
 
 .pin-selected-am {
-    margin: 0.9vh 0 0 0.9vw;
+    margin: 0.9vh 0 0 0.7vw;
 }
 
 .pin-selected-ea {
@@ -1268,7 +1300,7 @@ top: 58px; */
     width: 100%;
     display: flex;
     flex-direction: row;    
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     padding-bottom: 57px;
 }
@@ -1438,6 +1470,7 @@ h3 {
 .zoo-center-frame {
     /* margin-top: 116px; */
     /* margin-top: 10.8vh; */
+    width: 400px;
     padding-left: 141px;
     display: flex;
     flex-direction: column;
@@ -1447,7 +1480,8 @@ h3 {
 
 .nav-list-footer {
     /* margin-left: auto; */
-    padding-left: 281px;
+    /* padding-left: 141px; */
+    padding-left: 3vw;
     height: fit-content;
     color: #FEFEFE;
 
@@ -1503,17 +1537,18 @@ ul {
 }
 
 .map-footer {
-    padding: 0 calc(73px / var(--size-divisor));
+    padding: 0 73px;
     /* padding: 3%; */
 }
 
 .about-footer {
-    padding-right: calc(73px / var(--size-divisor));
+    padding-right: 73px;
     /* padding: 0 3vw; */
 }
 
 
 .center-address {
+    padding-top: 35px;
     /* width: 190px; */
     width: 50%;
     height: fit-content;
