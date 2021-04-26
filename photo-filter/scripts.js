@@ -121,6 +121,7 @@ fileInput.addEventListener('change', (e) => {
         image.src = reader.result;
     }
     reader.readAsDataURL(file);
+    e.target.value = '';
 });
 
 // save image to PC
