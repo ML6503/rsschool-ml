@@ -1,19 +1,5 @@
-// Get the header
-const header = document.getElementById("zooHeader");
+// TODO animate map btn on tooltip on index page map block
+// .map-watch-btn {
+//   transform: scale(1.3);
+// }
 
-// Get the offset position of the navbar
-const sticky = header.offsetTop;
-
-// Add the sticky class to the header so it always has top as its scroll position. 
-//Remove "sticky" when you leave the scroll position
-function fixedHeader() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } 
-//   else {
-//     header.classList.remove("sticky");
-//   }
-};
-
-// When the user scrolls the page, execute myFunction
-window.onscroll = () => fixedHeader();
