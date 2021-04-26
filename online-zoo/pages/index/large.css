@@ -1377,8 +1377,8 @@ h3 {
     border-radius: 3px;
     /* width: 383px; */
     width: 19.9vw;
-    /* height: 115px; */
-    height: 12.5vh;
+    height: 115px;
+    /* height: 12.5vh; */
     /* margin: 29px 0 15px; */
     margin-top: 1.8vh;
     margin-bottom: 2.5vh;
@@ -1447,6 +1447,7 @@ h3 {
 
 .nav-list-footer {
     /* margin-left: auto; */
+    padding-left: 281px;
     height: fit-content;
     color: #FEFEFE;
 
@@ -1487,8 +1488,8 @@ ul {
 .li-decor a {
     font-style: normal;
     font-weight: 500;
-    font-size: calc(16px / var(--size-divisor));
-    line-height: calc(19px / var(--size-divisor));
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .li-footer a {
