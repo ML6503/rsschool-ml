@@ -145,13 +145,13 @@ function saveImg() {
         const hue = getComputedStyle(image).getPropertyValue('--hue');  
 
         const ctx = canvas.getContext('2d');
+        // ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.filter = `blur(${blur * blurCorr}px) invert(${invert}) sepia(${sepia}) saturate(${saturate}) hue-rotate(${hue})`;
-        
         ctx.drawImage(img, 0, 0);
         const link = document.createElement('a');
         link.setAttribute('download', 'newImg.png');
         link.href = image.src;
-        link.href = canvas.toDataURL('image/jpeg');
+        link.href = canvas.toDataURL('image/png');
         // Firefox requires the link to be in the body
         document.body.appendChild(link);
 
