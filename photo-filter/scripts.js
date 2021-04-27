@@ -164,7 +164,6 @@ function saveImg() {
     };
 };
 
-console.log(image.src);
 saveButton.addEventListener('mousedown', (e) => {
     saveImg();
 });
