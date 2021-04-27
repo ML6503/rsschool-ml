@@ -13,15 +13,7 @@
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     overflow-x: hidden;
   }
-  canvas {
-    border:1px solid #000;
-    /* width: 500px;
-    height: 500px; */
-    max-height: 520px;
-    max-width: 830px;
-    display: none;
-    
-  }
+ 
   .header {
     text-align: center;
     width: 100%;
@@ -177,7 +169,8 @@
     --saturate: 100%;
     --hue: 0deg;
   }
-  img {
+  img,
+  canvas {
     height: 100%;
     width: 100%;
     max-height: 520px;
@@ -186,6 +179,15 @@
     filter: blur(var(--blur, 0px)) invert(var(--invert, 0%))
       sepia(var(--sepia, 0%)) saturate(var(--saturate, 100%))
       hue-rotate(var(--hue, 0deg));
+  }
+  canvas {
+    border:1px solid #000;
+    /* width: 500px;
+    height: 500px; */
+    /* max-height: 520px;
+    max-width: 830px; */
+    display: none;
+    
   }
   .fullscreen {
     position: fixed;
