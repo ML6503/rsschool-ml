@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Zoo Online" content="Open source RS School study project - Online Zoo">
+    <meta name="keywords" content="HTML, CSS, JavaScript, RS School, free study, EPAM, panda forever">
+    <meta name="author" content="ML AKA Arethel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Zoo</title>
+    <link rel="stylesheet" href="indexStyle.css" type="text/css">
+    <!-- <link rel="stylesheet" href="testimonialsStyle.css" type="text/css"> -->
+    <link rel="stylesheet" href="feedStyle.css" type="text/css">
+    <link rel="stylesheet" href="testimonialsStyle.css" type="text/css">
+    <link rel="stylesheet" href="mapStyle.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="background-body">
+
+    <section class="main-page">
+        <header class="nav-header" id="zooHeader">
+            <h1 style="margin: 0">
+                <a href=# class="logo-container">
+                    <span class="zoo-text">zoo</span>
+                    <span class="online-text">online</span>
+                </a>
+            </h1>
+
+            <nav class="nav-list-header nav-bar" role="navigation">
+                <ul class="nav-list">
+                    <li class="li-decor about"><a class="current" href=#top>About</a></li>
+                    <li class="li-decor"><a href=#>Zoos</a></li>
+                    <li class="li-decor map"><a href=#>Map</a></li>
+                    <li class="li-decor contact"><a href=#>Contact Us</a></li>
+                    <li class="li-decor"><a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp"
+                            target="_blank">Design</a></li>
+                </ul>
+            </nav>
+            <label class="label-mode-btn">
+                <div class="mode-btn">
+                    <input class="toggle-state" type="checkbox">
+                    <div class="knob">
+                    </div>
+                    </input>
+                </div>
+            </label>
+        </header>
+
+        <!-- Watch online block -->
+        <section class="watch-container">
+            <h3 class="watch-text">Watch your favourite <br />animal online</h3>
+            <button class="watch-btn">
+                <a href="https://explore.org/livecams/player/panda-bears/wolong-grove-panda-yard" target="_blank">
+                    <span class="watch-logo-big"></span>
+                </a>
+            </button>
+        </section>
+        <nav class="social-net" role="navigation">
+            <a class="net-icon" href="https://www.instagram.com" target="_blank">
+                <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid meet">
+                    <path
+                        d="M13.75 0H6.25C2.79875 0 0 2.79875 0 6.25V13.75C0 17.2013 2.79875 20 6.25 20H13.75C17.2013 20 20 17.2013 20 13.75V6.25C20 2.79875 17.2013 0 13.75 0ZM18.125 13.75C18.125 16.1625 16.1625 18.125 13.75 18.125H6.25C3.8375 18.125 1.875 16.1625 1.875 13.75V6.25C1.875 3.8375 3.8375 1.875 6.25 1.875H13.75C16.1625 1.875 18.125 3.8375 18.125 6.25V13.75Z"
+                        fill="#FEFEFE" />
+                    <path
+                        d="M10 5C7.23875 5 5 7.23875 5 10C5 12.7613 7.23875 15 10 15C12.7613 15 15 12.7613 15 10C15 7.23875 12.7613 5 10 5ZM10 13.125C8.2775 13.125 6.875 11.7225 6.875 10C6.875 8.27625 8.2775 6.875 10 6.875C11.7225 6.875 13.125 8.27625 13.125 10C13.125 11.7225 11.7225 13.125 10 13.125Z"
+                        fill="#FEFEFE" />
+                    <path
+                        d="M15.3752 5.29148C15.7432 5.29148 16.0415 4.99319 16.0415 4.62523C16.0415 4.25727 15.7432 3.95898 15.3752 3.95898C15.0073 3.95898 14.709 4.25727 14.709 4.62523C14.709 4.99319 15.0073 5.29148 15.3752 5.29148Z"
+                        fill="#FEFEFE" />
+                </svg>
+            </a>
+            <a class="net-icon" href="https://twitter.com" target="_blank">
+                <svg viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid meet">
+                    <path
+                        d="M20 1.92375C19.2563 2.25 18.4637 2.46625 17.6375 2.57125C18.4875 2.06375 19.1363 1.26625 19.4412 0.305C18.6488 0.7775 17.7738 1.11125 16.8412 1.2975C16.0887 0.49625 15.0162 0 13.8462 0C11.5763 0 9.74875 1.8425 9.74875 4.10125C9.74875 4.42625 9.77625 4.73875 9.84375 5.03625C6.435 4.87 3.41875 3.23625 1.3925 0.7475C1.03875 1.36125 0.83125 2.06375 0.83125 2.82C0.83125 4.24 1.5625 5.49875 2.6525 6.2275C1.99375 6.215 1.3475 6.02375 0.8 5.7225C0.8 5.735 0.8 5.75125 0.8 5.7675C0.8 7.76 2.22125 9.415 4.085 9.79625C3.75125 9.8875 3.3875 9.93125 3.01 9.93125C2.7475 9.93125 2.4825 9.91625 2.23375 9.86125C2.765 11.485 4.2725 12.6788 6.065 12.7175C4.67 13.8088 2.89875 14.4662 0.98125 14.4662C0.645 14.4662 0.3225 14.4513 0 14.41C1.81625 15.5813 3.96875 16.25 6.29 16.25C13.835 16.25 17.96 10 17.96 4.5825C17.96 4.40125 17.9538 4.22625 17.945 4.0525C18.7588 3.475 19.4425 2.75375 20 1.92375Z"
+                        fill="#FEFEFE" />
+                </svg>
+            </a>
+            <a class="net-icon" href="https://www.youtube.com/" target="_blank">
+                <svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid meet">
+                    <path
+                        d="M19.15 1.575C18.6075 0.61 18.0188 0.4325 16.82 0.365C15.6225 0.28375 12.6112 0.25 10.0025 0.25C7.38875 0.25 4.37625 0.28375 3.18 0.36375C1.98375 0.4325 1.39375 0.60875 0.84625 1.575C0.2875 2.53875 0 4.19875 0 7.12125C0 7.12375 0 7.125 0 7.125C0 7.1275 0 7.12875 0 7.12875V7.13125C0 10.0413 0.2875 11.7137 0.84625 12.6675C1.39375 13.6325 1.9825 13.8075 3.17875 13.8888C4.37625 13.9588 7.38875 14 10.0025 14C12.6112 14 15.6225 13.9587 16.8212 13.89C18.02 13.8087 18.6087 13.6338 19.1513 12.6688C19.715 11.715 20 10.0425 20 7.1325C20 7.1325 20 7.12875 20 7.12625C20 7.12625 20 7.12375 20 7.1225C20 4.19875 19.715 2.53875 19.15 1.575ZM7.5 10.875V3.375L13.75 7.125L7.5 10.875Z"
+                        fill="#FEFEFE" />
+                </svg>
+            </a>
+            <a class="net-icon" href="https://vk.com" target="_blank">
+                <svg viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid meet">
+                    <path
+                        d="M19.8217 10.1784C19.768 10.0883 19.4355 9.36579 17.8353 7.88068C16.1602 6.32557 16.3852 6.57809 18.4029 3.88914C19.6317 2.25152 20.123 1.25145 19.9692 0.823916C19.823 0.416387 18.9192 0.523894 18.9192 0.523894L15.9139 0.541396C15.9139 0.541396 15.6914 0.511393 15.5252 0.610151C15.3639 0.707658 15.2601 0.932674 15.2601 0.932674C15.2601 0.932674 14.7839 2.20027 14.1488 3.27785C12.81 5.55176 12.2737 5.67177 12.0549 5.53051C11.5461 5.20174 11.6736 4.20792 11.6736 3.50286C11.6736 1.29895 12.0074 0.380134 11.0223 0.142616C10.6948 0.0638606 10.4548 0.0113567 9.61848 0.00260608C8.54591 -0.00864474 7.63709 0.00635635 7.1233 0.257625C6.78078 0.425137 6.51701 0.798915 6.67827 0.820166C6.87703 0.846418 7.32707 0.941425 7.56583 1.26645C7.87461 1.68523 7.86336 2.6278 7.86336 2.6278C7.86336 2.6278 8.04087 5.22174 7.44958 5.54426C7.0433 5.76553 6.487 5.31425 5.29317 3.25034C4.68187 2.19402 4.21934 1.02518 4.21934 1.02518C4.21934 1.02518 4.13058 0.807665 3.97182 0.691407C3.77931 0.550146 3.50929 0.505143 3.50929 0.505143L0.651577 0.522644C0.651577 0.522644 0.222795 0.535146 0.0652839 0.721409C-0.0747264 0.887671 0.054033 1.2302 0.054033 1.2302C0.054033 1.2302 2.2917 6.46433 4.82438 9.10327C7.1483 11.5222 9.786 11.3634 9.786 11.3634H10.9811C10.9811 11.3634 11.3424 11.3234 11.5261 11.1247C11.6961 10.9422 11.6899 10.5996 11.6899 10.5996C11.6899 10.5996 11.6661 8.99577 12.4112 8.7595C13.145 8.52698 14.0876 10.3096 15.0864 10.9959C15.8414 11.5147 16.4152 11.4009 16.4152 11.4009L19.0867 11.3634C19.0867 11.3634 20.4843 11.2772 19.8217 10.1784Z"
+                        fill="#FEFEFE" />
+                </svg>
+            </a>
+        </nav>
+
+        <aside class="animals-slider">
+            <div class="animals-images-container">
+                <span class="line">
+                    <svg width="1080" height="13" viewBox="0 0 1080 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="4" y1="6.5" x2="1087" y2="6.5" stroke="#FEFEFE" />
+                        <circle cx="6.5" cy="6.5" r="2.5" fill="#FEFEFE" />
+                        <circle cx="6.5" cy="6.5" r="6" stroke="#FEFEFE" />
+                    </svg>
+                </span>
+                <div class="animals-images animals-images-watch">
+                    <picture>
+                        <source media="(min-width:1920px)" srcset="../../assets/images/slider/eagleSlider.png">
+                        <img class="animal-img" src="../../assets/images/slider/eagleSlider.png" alt="Couple of Eagles">
+                    </picture>
+                    <picture>
+                        <div class="panda-details">
+                            <p class="panda-info">
+                                Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.
+                            </p>
+                            <span class="panda-buttons-container">
+                                <button class="panda-button">
+                                    <a href="https://explore.org/livecams/player/panda-bears/wolong-grove-panda-yard">
+                                        <img src="../../assets/icons/watchLogoSmall.svg" alt="Watch online button">
+                                    </a>
+                                </button>
+                                <button class="panda-button">
+                                    <img src="../../assets/icons/donateLogo.svg" alt="Donate button">
+                                </button>
+                            </span>
+                        </div>
+                        <source media="(min-width:1920px)" srcset="../../assets/images/slider/pandaSlider.png">
+                        <img class="animal-img panda" src="../../assets/images/slider/pandaSlider.png" alt="Panda">
+                    </picture>
+                    <picture>
+                        <source media="(min-width:1920px)" srcset="../../assets/images/slider/apeSlider.png">
+                        <img class="animal-img" src="../../assets/images/slider/apeSlider.png" alt="Ape male walking">
+                    </picture>
+                    <picture>
+                        <source media="(min-width:1920px)" srcset="../../assets/images/slider/alligatorSlider.png">
+                        <img class="animal-img alligator" src="../../assets/images/slider/alligatorSlider.png"
+                            alt="Alligator head">
+                    </picture>
+                    <picture>
+                        <source media="(min-width:1920px)" srcset="../../assets/images/slider/foxSlider.png">
+                        <img class="animal-img" src="../../assets/images/slider/foxSlider.png" alt="Fox walking">
+                    </picture>
+                </div>
+            </div>
+            <div class="slider-bar">
+                <output class="slider-output" for="slider-input">
+                    <span>02/<b class="slider-output-total">08</b></span>
+                </output>
+                <input class="slider-input" type="range" value="1">
+            </div>
+        </aside>
+
+    </section>
+
+    <!-- How it works block -->
+    <section class="how-page">
+        <article class="zoo-online-article">
+            <h3 class="how-header">How it works?</h3>
+            <p>
+                As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious
+                species and their habitat, and we are determined to assist in all aspects, including providing
+                veterinary support and raising much-needed emergency funds. Zoo Online saves wildlife and inspires
+                everyone to make conservation a priority in their lives. Animals have the right to a pain-free and happy
+                life. They have equal claim to the resources of this planet, and deserve a life of dignity and
+                compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on
+                precious species and their habitat.
+            </p>
+            <!-- photo src URL(sebastian-kurpiel-f7jqXluxJ8E-unsplash.jpg) -->
+            <img class="deers-img" src="../../assets/images/deers.png" alt="Two brown deers surrounded by trees photo">
+
+            <div class="how-bar">
+                <output class="slider-output how-output" for="how-input">
+                    <span>01/<b class="slider-output-total how-total">04</b></span>
+                </output>
+                <input class="slider-input how-input" type="range" value="1">
+
+                <button class="how-watch-btn">
+                    <a href="https://explore.org/livecams/player/panda-bears/wolong-grove-panda-yard" target="_blank">
+                        <span class="watch-logo-big"></span>
+                    </a>
+                </button>
+            </div>
+        </article>
+        <footer class="how-footer">
+            <section class="inspire slogan">
+                <span>
+                    <img src="../../assets/icons/inspireIcon.svg" alt="Problem solving inspire icon">
+                </span>
+                <h3 class="footer-h">What inspires us?</h3>
+                <p class="footer-p">
+                    As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on
+                    precious species and their habitat, and we are determined to assist in all aspects.
+                </p>
+            </section>
+            <section class="mission slogan">
+                <span>
+                    <img src="../../assets/icons/missionIcon.svg" alt="Achievment mission icon">
+                </span>
+                <h3 class="footer-h">Our mission</h3>
+                <p class="footer-p">
+                    Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives.
+                </p>
+            </section>
+            <section class="slogan">
+                <span>
+                    <img src="../../assets/icons/believeIcon.svg" alt="Export love believe icon">
+                </span>
+                <h3 class="footer-h">What we believe in?</h3>
+                <p class="footer-p">
+                    Animals have the right to a pain-free and happy life. They have equal claim to the resources of
+                    this planet, and deserve a life of dignity and compassion.
+                </p>
+            </section>
+        </footer>
+    </section>
+
+    <!-- Pets in Zoo block -->
+    <section class="pets-page">
+        <h3 class="pets-txt"> Pets in Zoo</h3>
+        <div class="pets-slider">
+
+            <div class="animals-images">
+                <span class="arrow">
+                    <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.666298 16.1706L14.0167 29.5207C14.3255 29.8298 14.7376 30 15.1772 30C15.6167 30 16.0289 29.8298 16.3376 29.5207L17.3208 28.5378C17.9605 27.8973 17.9605 26.8564 17.3208 26.2169L6.11016 15.0062L17.3332 3.78314C17.642 3.47412 17.8125 3.06217 17.8125 2.6229C17.8125 2.18315 17.642 1.7712 17.3332 1.46194L16.3501 0.479263C16.0411 0.17024 15.6291 0 15.1896 0C14.7501 0 14.3379 0.17024 14.0291 0.479263L0.666298 13.8416C0.356789 14.1516 0.18679 14.5655 0.187767 15.0055C0.18679 15.4472 0.356789 15.8608 0.666298 16.1706Z"
+                            fill="#828282" />
+                    </svg>
+                </span>
+                <div class="one-pet">
+                <picture >                   
+                    <div class="details-pet panda-details-pet pet-info">
+                        <p class="panda-info">
+                            Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.
+                        </p>
+                        <span class="panda-buttons-container">
+                            <button class="panda-button">
+                                <img src="../../assets/icons/watchLogoSmall.svg" alt="Watch online button">
+                            </button>
+                            <button class="panda-button">
+                                <img src="../../assets/icons/donateLogo.svg" alt="Donate button">
+                            </button>
+                        </span>
+                    </div>
+                    <div class="faded"></div>
+                  
+                    
+                    <source media="(min-width:1920px)" srcset="../../assets/images/pets/pandaPet.png">
+                    <img class="pet-img" src="../../assets/images/pets/pandaPet.png" alt="Panda lying on wood piece">
+                </picture>
+                </div>
+                <picture>
+                    <source media="(min-width:1920px)" srcset="../../assets/images/pets/eaglesPet.png">
+                    <img class="pet-img" src="../../assets/images/pets/eaglesPet.png" alt="Couple of Eagles">
+                </picture>
+                <picture>
+                    <source media="(min-width:1920px)" srcset="../../assets/images/pets/apePet.png">
+                    <img class="pet-img" src="../../assets/images/pets/apePet.png"
+                        alt="Ape male walking sideway looking up">
+                </picture>
+                <picture>
+                    <source media="(min-width:1920px)" srcset="../../assets/images/pets/alligatorPet.png">
+                    <img class="pet-img alligator" src="../../assets/images/pets/alligatorPet.png" alt="Alligator head">
+                </picture>
+
+                <span class="arrow">
+                    <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.3337 13.8294L3.98332 0.479264C3.67454 0.170243 3.26235 0 2.82284 0C2.38334 0 1.97114 0.170243 1.66237 0.479264L0.679203 1.46218C0.0394526 2.10267 0.0394526 3.14363 0.679203 3.78314L11.8898 14.9938L0.666764 26.2169C0.357986 26.5259 0.1875 26.9378 0.1875 27.3771C0.1875 27.8168 0.357986 28.2288 0.666764 28.5381L1.64993 29.5207C1.95895 29.8298 2.3709 30 2.81041 30C3.24991 30 3.66211 29.8298 3.97088 29.5207L17.3337 16.1584C17.6432 15.8484 17.8132 15.4345 17.8122 14.9945C17.8132 14.5528 17.6432 14.1392 17.3337 13.8294Z"
+                            fill="#333333" />
+                    </svg>
+                </span>
+            </div>
+
+            <div class="how-bar">
+                <output class="slider-output how-output" for="how-input">
+                    <span>01/<b class="slider-output-total how-total">08</b></span>
+                </output>
+                <input class="slider-input how-input pets-input" type="range" value="1">
+
+                <button class="choose-btn">
+                    <a href="#map" title="Look for pets at map">
+                        <img src="../../assets/icons/chooseBtn.svg"  
+                            alt="Green button icon with Choose your favourite text">
+                    </a>
+                </button>
+            </div>
+    </section>
+
+    <section class="feed-block">
+        <div>
+            <h3 class="feed-h">Pay and feed</h3>
+            <p class="feed-txt">
+                The opportunity to easily and naturally (but as often as possible) donate to the needs of animals that
+                you like
+            </p>
+        </div>
+        <div class="feed-icons-container">
+            <span class="feed-icon visa-icon"></span>
+            <span>
+                <svg width="108" height="16" viewBox="0 0 108 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M107.707 8.70711C108.098 8.31658 108.098 7.68342 107.707 7.29289L101.343 0.928932C100.953 0.538408 100.319 0.538408 99.9289 0.928932C99.5384 1.31946 99.5384 1.95262 99.9289 2.34315L105.586 8L99.9289 13.6569C99.5384 14.0474 99.5384 14.6805 99.9289 15.0711C100.319 15.4616 100.953 15.4616 101.343 15.0711L107.707 8.70711ZM0 9L107 9V7L0 7L0 9Z"
+                        fill="url(#paint0_linear)" />
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="-19.9789" y1="8" x2="-19.827" y2="12.9337"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#4BD8B5" />
+                            <stop offset="1" stop-color="#49D6DF" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </span>
+            <span class="feed-icon zoo-icon"></span>
+            <span>
+                <svg width="108" height="16" viewBox="0 0 108 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M107.707 8.70711C108.098 8.31658 108.098 7.68342 107.707 7.29289L101.343 0.928932C100.953 0.538408 100.319 0.538408 99.9289 0.928932C99.5384 1.31946 99.5384 1.95262 99.9289 2.34315L105.586 8L99.9289 13.6569C99.5384 14.0474 99.5384 14.6805 99.9289 15.0711C100.319 15.4616 100.953 15.4616 101.343 15.0711L107.707 8.70711ZM0 9L107 9V7L0 7L0 9Z"
+                        fill="url(#paint0_linear)" />
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="-19.9789" y1="8" x2="-19.827" y2="12.9337"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#4BD8B5" />
+                            <stop offset="1" stop-color="#49D6DF" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </span>
+            <span class="feed-icon panda-icon"></span>
+
+        </div>
+        <button class="donate-btn">
+            <img src="../../assets/icons/donateButton.svg" alt="Donate green button icon">
+        </button>
+    </section>
+
+    <section class="testimonials-block">
+        <h3 class="testimonials-h">Testimonials</h3>
+        <div class="review-slider">
+            <span>
+                <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.666298 16.1706L14.0167 29.5207C14.3255 29.8298 14.7376 30 15.1772 30C15.6167 30 16.0289 29.8298 16.3376 29.5207L17.3208 28.5378C17.9605 27.8973 17.9605 26.8564 17.3208 26.2169L6.11016 15.0062L17.3332 3.78314C17.642 3.47412 17.8125 3.06217 17.8125 2.6229C17.8125 2.18315 17.642 1.7712 17.3332 1.46194L16.3501 0.479263C16.0411 0.17024 15.6291 0 15.1896 0C14.7501 0 14.3379 0.17024 14.0291 0.479263L0.666298 13.8416C0.356789 14.1516 0.18679 14.5655 0.187767 15.0055C0.18679 15.4472 0.356789 15.8608 0.666298 16.1706Z"
+                        fill="#333333" />
+                </svg>
+            </span>
+
+            <section class="review">
+                <span class="user-frame user-1"></span>
+                <h3 class="user-name">Nastya Sidorova</h3>
+                <p class="feedback">
+                    As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on
+                    precious species and their habitat.
+                </p>
+            </section>
+            <section class="review">
+                <span class=" user-frame user-2"></span>
+                <h3 class="user-name">Vlad Kim</h3>
+                <p class="feedback">
+                    As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on
+                    precious species and their habitat.
+                </p>
+            </section>
+
+            <span>
+                <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3337 13.8294L3.98332 0.479264C3.67454 0.170243 3.26235 0 2.82284 0C2.38334 0 1.97114 0.170243 1.66237 0.479264L0.679203 1.46218C0.0394526 2.10267 0.0394526 3.14363 0.679203 3.78314L11.8898 14.9938L0.666764 26.2169C0.357986 26.5259 0.1875 26.9378 0.1875 27.3771C0.1875 27.8168 0.357986 28.2288 0.666764 28.5381L1.64993 29.5207C1.95895 29.8298 2.3709 30 2.81041 30C3.24991 30 3.66211 29.8298 3.97088 29.5207L17.3337 16.1584C17.6432 15.8484 17.8132 15.4345 17.8122 14.9945C17.8132 14.5528 17.6432 14.1392 17.3337 13.8294Z"
+                        fill="#333333" />
+                </svg>
+            </span>
+
+        </div>
+        <div class="how-bar">
+            <output class="slider-output how-output" for="how-input">
+                <span>02/<b class="slider-output-total how-total">08</b></span>
+            </output>
+            <input class="slider-input how-input pets-input feedback-input" type="range" value="1">
+
+            <button class="feedback-btn">
+                <img src="../../assets/icons/feedbackBtn.svg" alt="Green button icon with Leave feedback text">
+            </button>
+        </div>
+    </section>
+    <!-- Map Block -->
+    <section id="map" class="map-block">
+        <h3 class="map-h">Map</h3>
+        <div class="map-img">
+            <span class=" pin eagle-pin">
+              <img src="../../assets/images/map/eaglePin.png">
+              <span class="tooltip-info eagle-pin-tooltip">
+                  <h3 class="pin-h">West End Bald Eagle</h3>
+                  <p></p>
+              </span>                   
+            </span>
+            <span class=" pin alligator-pin">
+                <img src="../../assets/images/map/alligatorPin.png">                   
+              </span>
+              <span class=" pin ape-pin">
+                <img src="../../assets/images/map/apePin.png">                   
+              </span>
+              <span class=" pin panda-pin">
+                <img src="../../assets/images/map/pandaPin.png">                   
+              </span>
+        </div>
+        <button class="map-watch-btn">
+            <a href="https://explore.org/livecams/player/panda-bears/wolong-grove-panda-yard" target="_blank">
+            <span class="watch-logo-big"></span>
+            </a>
+        </button>
+    </section>
+
+    <script src="./indexJS.js"></script>
+</body>
+
+</html>
