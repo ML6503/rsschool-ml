@@ -136,7 +136,7 @@ function saveImg() {
         canvas.width = img.width;
         canvas.height = img.height;
 
-        const blurCorr = img.naturalHeight / img.height;
+        const blurCorr = img.width >= img.height ? img.width / image.clientWidth : img.height / image.clientHeight;
         // const blur = getComputedStyle(image).getPropertyValue('--blur');
         const blur = document.getElementsByName('blur')[0].nextElementSibling.value;
         const invert = getComputedStyle(image).getPropertyValue('--invert');
