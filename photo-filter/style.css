@@ -7,6 +7,9 @@
   a:focus {
     outline: 0;
   }
+  html {
+    background-color: #313940;
+  }
   body {
     min-height: 100vh;
     background-color: #313940;
