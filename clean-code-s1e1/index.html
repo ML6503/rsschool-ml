@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <head>
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  </head>
+  <body class="page">
+    <header class="eisenhower-matrix__wrapper">
+      <h1>
+        <img class="eisenhower-matrix__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix image">
+      </h1>
+      <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">
+        Want more details?
+      </a>
+    </header>
+    <main class="tasks__wrapper">
+      <section class="new-task__wrapper">
+        <h3 class="new-task__header task__header">Add Item</h3> 
+        <div class="task-row__wrapper">
+          <input class="task task__input new-task__input" type="text">
+          <button class="add style__btn">Add</button>
+        </div>
+      </section>
+      <section>
+        <h3 class="task__header">Todo</h3>
+        <ul class="incomplete-tasks">
+          <li class="style__task">
+            <input class="checkbox__input" type="checkbox">
+            <label class="task task__label">Pay Bills</label>
+            <input class="task task__input" type="text">
+            <button class="edit style__btn">Edit</button>
+            <button class="delete style__btn">
+              <img class="remove__img" src="./remove.svg" alt="Remove arrow icon">
+            </button>
+          </li>
+          <li class="edit-mode style__task">
+           <input class="checkbox__input" type="checkbox">
+           <label class="task task__label">Go Shopping</label>
+           <input type="text" value="Go Shopping" class="task task__input">
+           <button class="edit style__btn">Save</button>
+           <button class="delete style__btn">
+             <img class="remove__img" src="./remove.svg" alt="Remove arrow icon">
+           </button>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="task__header">Completed</h3>
+        <ul class="completed-tasks">
+          <li class="style__task">
+            <input class="checkbox__input" type="checkbox" checked>
+            <label class="task complete task__label">See the Doctor</label>
+            <input class="task task__input" type="text" >
+            <button class="edit style__btn">Edit</button>
+            <button class="delete style__btn">
+              <img class="remove__img" src="./remove.svg" alt="Remove arrow icon">
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
